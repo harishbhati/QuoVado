@@ -7,7 +7,7 @@
         padding: 10px 20px;
         min-width: 115px;
         border-radius: 5px;
-       
+        text-align: center;
     }
     .outline{
         background: $white;
@@ -15,4 +15,9 @@
     .fill{
         background: $grey;
         color: $white;
+    }
+    .fill-blue{
+        background: $blue;
+        color: $white;
+        border-color: $blue;
     }

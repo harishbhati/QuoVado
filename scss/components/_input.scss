@@ -1,0 +1,73 @@
+input[type="text"],input[type="password"],select{
+    box-sizing: border-box;
+    background: #fcfcfc;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 13px;
+}
+label{
+    color: $blue;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+qv-radio{
+    position: relative;
+    margin-right: 25px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $blue;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*select*/

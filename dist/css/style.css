@@ -2,8 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -12,8 +16,18 @@ ul {
   padding: 0;
 }
 
-.ml-auto {
-  margin-left: auto;
+*:where(:not(iframe, canvas, img,svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+}
+
+body {
+  font: 500 15px/1.4 "Roboto", sans-serif;
+  background: #fff;
+  color: #4e4e4e;
+  height: 100%;
+  width: 100%;
 }
 
 button {
@@ -24,6 +38,7 @@ button {
   padding: 10px 20px;
   min-width: 115px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .outline {
@@ -33,6 +48,12 @@ button {
 .fill {
   background: #404040;
   color: #fff;
+}
+
+.fill-blue {
+  background: #1f0488;
+  color: #fff;
+  border-color: #1f0488;
 }
 
 header {
@@ -65,12 +86,12 @@ header a img {
 header .notifcation {
   width: 18px;
   height: 21px;
-  background: url("../../images/icons_sprites.png") -112px -69px;
+  background: url("../../images/icons_sprites.png") 38px 162px;
 }
 header .users {
   width: 26px;
   height: 26px;
-  background: url("../../images/icons_sprites.png") -114px -112px;
+  background: url("../../images/icons_sprites.png") 118px 46px;
 }
 
 nav {
@@ -91,12 +112,6 @@ nav ul li {
 }
 nav .active-nav {
   background: #efefef;
-}
-
-body {
-  font: 500 15px/1.4 "Roboto", sans-serif;
-  background: #fff;
-  color: #4e4e4e;
 }
 
 .quo__wrapper {
@@ -135,7 +150,7 @@ section p {
 section p i {
   width: 62px;
   height: 39px;
-  background: url("../../images/icons_sprites.png") -112px -10px;
+  background: url("../../images/icons_sprites.png") -121px -13px;
   display: inline-block;
 }
 section ul {
@@ -147,12 +162,13 @@ section ul {
 section ul .nav-left {
   width: 32px;
   height: 32px;
-  background: url("../../images/icons_sprites.png") -10px -112px;
+  background: url("../../images/icons_sprites.png") -82px -406px;
 }
 section ul .nav-right {
+  margin-left: auto;
   width: 32px;
   height: 32px;
-  background: url("../../images/icons_sprites.png") -62px -112px;
+  background: url("../../images/icons_sprites.png") -130px -406px;
 }
 section ul .arrow {
   cursor: pointer;
