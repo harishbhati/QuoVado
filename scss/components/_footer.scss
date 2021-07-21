@@ -1,8 +1,8 @@
-.footer{
+nav{
     box-shadow: 1px -1px 4px 1px #e3e3e3;
-    &__nav__ul{
+    ul{
         @include quo-flex(flex, wrap, center, center);
-        &-item{
+        li{
             font-size: 20px;
             padding: 30px;
             min-width: 130px;

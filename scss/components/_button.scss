@@ -1,5 +1,5 @@
-.quo{
-    &__btn{
+
+    button{
         cursor: pointer;
         font: inherit;
         outline: 0;
@@ -9,11 +9,10 @@
         border-radius: 5px;
        
     }
-    &__outline{
+    .outline{
         background: $white;
     }
-    &__fill{
+    .fill{
         background: $grey;
         color: $white;
     }
-}

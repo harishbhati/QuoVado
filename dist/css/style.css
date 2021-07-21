@@ -16,7 +16,7 @@ ul {
   margin-left: auto;
 }
 
-.quo__btn {
+button {
   cursor: pointer;
   font: inherit;
   outline: 0;
@@ -25,15 +25,17 @@ ul {
   min-width: 115px;
   border-radius: 5px;
 }
-.quo__outline {
+
+.outline {
   background: #fff;
 }
-.quo__fill {
+
+.fill {
   background: #404040;
   color: #fff;
 }
 
-.header {
+header {
   padding: 10px 20px;
   box-shadow: 1px -3px 4px 5px #e3e3e3;
   display: flex;
@@ -42,50 +44,52 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
-.header__right {
+header ul {
+  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
 }
-.header__right__items {
+header ul li {
   cursor: pointer;
 }
-.header__logo {
+header a {
   display: block;
+  margin-left: auto;
 }
-.header__logo__img {
+header a img {
   max-width: 155px;
 }
-.header .notifcation {
+header .notifcation {
   width: 18px;
   height: 21px;
   background: url("../../images/icons_sprites.png") -112px -69px;
 }
-.header .users {
+header .users {
   width: 26px;
   height: 26px;
   background: url("../../images/icons_sprites.png") -114px -112px;
 }
 
-.footer {
+nav {
   box-shadow: 1px -1px 4px 1px #e3e3e3;
 }
-.footer__nav__ul {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.footer__nav__ul-item {
+nav ul li {
   font-size: 20px;
   padding: 30px;
   min-width: 130px;
   text-align: center;
   cursor: pointer;
 }
-.footer .active-nav {
+nav .active-nav {
   background: #efefef;
 }
 
@@ -103,7 +107,8 @@ body {
   padding: 30px;
   height: calc(100vh - 164px);
 }
-.quo__card {
+
+section {
   position: relative;
   padding: 50px 30px;
   background: #fff;
@@ -113,10 +118,10 @@ body {
   border-radius: 5px;
   text-align: center;
 }
-.quo__card__title {
+section h1 {
   font-size: 32px;
 }
-.quo__card__cash {
+section p {
   background: #404040;
   display: flex;
   justify-content: center;
@@ -127,32 +132,32 @@ body {
   margin: 50px auto 20px;
   border-radius: 50%;
 }
-.quo__card__cash-icon {
+section p i {
   width: 62px;
   height: 39px;
   background: url("../../images/icons_sprites.png") -112px -10px;
   display: inline-block;
 }
-.quo__card__nav {
+section ul {
   display: flex;
   flex-wrap: wrap;
   max-width: 150px;
   margin: 20px auto 50px;
 }
-.quo__card__nav-left {
+section ul .nav-left {
   width: 32px;
   height: 32px;
   background: url("../../images/icons_sprites.png") -10px -112px;
 }
-.quo__card__nav-right {
+section ul .nav-right {
   width: 32px;
   height: 32px;
   background: url("../../images/icons_sprites.png") -62px -112px;
 }
-.quo__card__nav .nav-arrow {
+section ul .arrow {
   cursor: pointer;
 }
-.quo__card__add {
+section .card__add {
   width: 82px;
   height: 82px;
   background: url("../../images/icons_sprites.png") -10px -10px;
@@ -162,26 +167,28 @@ body {
   z-index: 1;
   cursor: pointer;
 }
-.quo__progress {
+
+progress {
   width: 300px;
 }
-.quo__progress::-webkit-progress-value {
+progress::-webkit-progress-value {
   background: #404040;
   border-radius: 25px;
 }
-.quo__progress::-webkit-progress-bar {
+progress::-webkit-progress-bar {
   background: #fff;
   border: 1px solid #404040;
   border-radius: 25px;
   padding: 2px;
   height: 20px;
 }
-.quo__progress::-moz-progress-bar {
+progress::-moz-progress-bar {
   background: #404040;
   border-radius: 25px;
   padding: 2px;
 }
-.quo__button-holder {
+
+article {
   display: flex;
   justify-content: center;
   align-items: center;

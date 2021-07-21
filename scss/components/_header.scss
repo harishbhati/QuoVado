@@ -1,16 +1,18 @@
-.header{
+header{
     padding: 10px 20px;
     box-shadow: 1px -3px 4px 5px $box-shadow;
     @include quo-flex(flex, wrap, center, center, 10px);
-    &__right{
+    ul{
+        margin-left: auto;
         @include quo-flex(flex, wrap, center, center, 25px);
-        &__items{
+        li{
             cursor: pointer;
         }
     }
-    &__logo{
+    a{
         display: block;
-        &__img{
+        margin-left: auto;
+        img{
             max-width: 155px;
         }
     }

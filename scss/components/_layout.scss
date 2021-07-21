@@ -11,81 +11,82 @@ body{
         padding: 30px;
         height: calc(100vh - 164px);
     }
-    &__card{
-        position: relative;
-        padding: 50px 30px;
-        background: $white;
-        border: 1px solid $border-color;
-        max-width: 370px;
-        width: 100%;
-        border-radius: 5px;
-        text-align: center;
-        &__title{
-            font-size: 32px;
+}
+
+section{
+    position: relative;
+    padding: 50px 30px;
+    background: $white;
+    border: 1px solid $border-color;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+   h1{
+        font-size: 32px;
+    }
+    p{
+        background: $grey;
+        @include quo-flex(flex, wrap, center, center);
+        width: 120px;
+        height: 120px;
+        margin: 50px auto 20px;
+        border-radius: 50%;
+        i{
+            width: 62px;
+            height: 39px;
+            background: url('../../images/icons_sprites.png') -112px -10px;
+            display: inline-block;
         }
-        &__cash{
-            background: $grey;
-            @include quo-flex(flex, wrap, center, center);
-            width: 120px;
-            height: 120px;
-            margin: 50px auto 20px;
-            border-radius: 50%;
-            &-icon{
-                width: 62px;
-                height: 39px;
-                background: url('../../images/icons_sprites.png') -112px -10px;
-                display: inline-block;
-            }
+    }
+    ul{
+        @include quo-flex(flex, wrap);
+        max-width: 150px;
+        margin: 20px auto 50px;
+        .nav-left{
+            width: 32px; 
+            height: 32px;
+            background: url('../../images/icons_sprites.png') -10px -112px;
         }
-        &__nav{
-            @include quo-flex(flex, wrap);
-            max-width: 150px;
-            margin: 20px auto 50px;
-            &-left{
-                width: 32px; 
-                height: 32px;
-                background: url('../../images/icons_sprites.png') -10px -112px;
-            }
-            &-right{
-                width: 32px; 
-                height: 32px;
-                background: url('../../images/icons_sprites.png') -62px -112px;
-            }
-            .nav-arrow{
-                cursor: pointer;
-            }
+       .nav-right{
+            width: 32px; 
+            height: 32px;
+            background: url('../../images/icons_sprites.png') -62px -112px;
         }
-        &__add{
-            width: 82px; 
-            height: 82px;
-            background: url('../../images/icons_sprites.png') -10px -10px;
-            position: absolute;
-            bottom: 50px;
-            right: -160px;
-            z-index: 1;
+        .arrow{
             cursor: pointer;
         }
     }
-    &__progress{
-        width: 300px;
-        &::-webkit-progress-value {
-            background: $grey;
-            border-radius: 25px;
-        }
-        &::-webkit-progress-bar {
-            background: $white;
-            border: 1px solid $grey;
-            border-radius: 25px;
-            padding: 2px;
-            height: 20px;
-        }
-        &::-moz-progress-bar {
-            background: $grey;
-            border-radius: 25px;
-            padding: 2px;
-        }
+    .card__add{
+        width: 82px; 
+        height: 82px;
+        background: url('../../images/icons_sprites.png') -10px -10px;
+        position: absolute;
+        bottom: 50px;
+        right: -160px;
+        z-index: 1;
+        cursor: pointer;
     }
-    &__button-holder{
-        @include quo-flex(flex, wrap, center, center, 30px);
+}
+progress{
+    width: 300px;
+    &::-webkit-progress-value {
+        background: $grey;
+        border-radius: 25px;
     }
+    &::-webkit-progress-bar {
+        background: $white;
+        border: 1px solid $grey;
+        border-radius: 25px;
+        padding: 2px;
+        height: 20px;
+    }
+    &::-moz-progress-bar {
+        background: $grey;
+        border-radius: 25px;
+        padding: 2px;
+    }
+}
+article{
+    @include quo-flex(flex, wrap, center, center, 30px);
 }
