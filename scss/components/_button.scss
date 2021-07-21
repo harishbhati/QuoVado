@@ -1,0 +1,19 @@
+.quo{
+    &__btn{
+        cursor: pointer;
+        font: inherit;
+        outline: 0;
+        border: 1px solid $grey;
+        padding: 10px 20px;
+        min-width: 115px;
+        border-radius: 5px;
+       
+    }
+    &__outline{
+        background: $white;
+    }
+    &__fill{
+        background: $grey;
+        color: $white;
+    }
+}

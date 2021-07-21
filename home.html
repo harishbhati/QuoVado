@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="QuoVado">
+    <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
+    <title>Home - QuoVado</title>
+    <link href="dist/css/style.min.css" rel='stylesheet' type='text/css' media='all'>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header__logo ml-auto" title="QuoVado">
+            <img class="header__logo__img" src="images/quovado.png" alt="QuoVado" /> 
+        </a>
+        <ul class="header__right ml-auto">
+            <li class="header__right__items notifcation"></li>
+            <li class="header__right__items users"></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="quo__wrapper">
+            <div class="quo__card">
+                <h1 class="quo__card__title">Cash</h1>
+                <div class="quo__card__cash"><span class="quo__card__cash-icon"></span></div>
+                <progress class="quo__progress" value="35" max="70"></progress>
+                <ul class="quo__card__nav">
+                    <li class="quo__card__nav-left nav-arrow"></li>
+                    <li class="quo__card__nav-right nav-arrow ml-auto"></li>
+                </ul>
+                <div class="quo__button-holder quo-flex">
+                    <button type="button" class="quo__btn quo__outline">Later</button>
+                    <button type="button" class="quo__btn quo__fill">Submit</button>
+                </div>
+                <span class="quo__card__add"></span>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav__ul">
+                <li class="footer__nav__ul-item">Timeline</li>
+                <li class="footer__nav__ul-item active-nav">Assests</li>
+                <li class="footer__nav__ul-item">Goal</li>
+                <li class="footer__nav__ul-item">QV Score</li>
+                <li class="footer__nav__ul-item">Be Inspire</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

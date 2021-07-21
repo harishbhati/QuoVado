@@ -1,0 +1,23 @@
+@mixin quo-flex ($flex: null, $wrap:null, $justify:null, $align_item:null, $gap: null,$direction:null) {
+    @if $flex !=null {
+      display: $flex;
+    }
+    @if $justify != null{
+      justify-content: $justify;
+    }
+    @if $align_item != null{
+      align-items: $align_item;
+    }
+    @if $wrap != null{
+      flex-wrap: $wrap;
+    }
+    @if $gap != null{
+        gap: $gap;
+      }
+    @if $direction != null{
+      flex-direction: $direction;
+    }
+}
+.ml-auto{
+    margin-left: auto;
+}

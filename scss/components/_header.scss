@@ -1,0 +1,27 @@
+.header{
+    padding: 10px 20px;
+    box-shadow: 1px -3px 4px 5px $box-shadow;
+    @include quo-flex(flex, wrap, center, center, 10px);
+    &__right{
+        @include quo-flex(flex, wrap, center, center, 25px);
+        &__items{
+            cursor: pointer;
+        }
+    }
+    &__logo{
+        display: block;
+        &__img{
+            max-width: 155px;
+        }
+    }
+    .notifcation{
+        width: 18px; 
+        height: 21px;
+        background: url('../../images/icons_sprites.png') -112px -69px;
+    }
+    .users{
+        width: 26px; 
+        height: 26px;
+        background: url('../../images/icons_sprites.png') -114px -112px;
+    }
+}
