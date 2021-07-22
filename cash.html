@@ -11,142 +11,146 @@
     <link href="dist/css/cash.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
-    <qv-header><img src="images/quovado.png" alt="QuoVado"></qv-header>
-    <main>
-        <qv-aside>
-            <qv-search>
+    
+    <header><!--Cash Header -->
+        <img src="images/quovado.png" alt="QuoVado">
+    </header>
+    
+    <main><!--Cash main -->
+        <aside><!--Cash sidebar -->
+            <section>
                 <input type="text" placeholder="Search">
                 <button class="search" type="button"><i></i></button>
-            </qv-search>
-            <qv-lifestory>
+            </section>
+            <article>
                 <h2>Life Story</h2>
-                <qv-details>
-                    <h3>John Smith</h3>
+                <details open><!--life story -->
+                    <summary>John Smith</summary>
                     <p>50 Years old</p>
-                </qv-details>
-                <qv-details>
-                    <h3>Residency</h3>
+                </details>
+                <details open><!--life story -->
+                    <summary>Residency</summary>
                     <a href="javascript:void (0);">[edit]</a>
                     <p>Singapore</p>
                     <p>10 Years</p>
-                </qv-details>
-                <qv-details>
-                    <h3>Family</h3>
+                </details>
+                <details open><!--life story -->
+                    <summary>Family</summary>
                     <a href="javascript:void (0);">[edit]</a>
                     <p>Married</p>
                     <p>3 Children</p>
-                </qv-details>
-                <qv-details>
-                    <h3>Work</h3>
+                </details>
+                <details open> <!--life story -->
+                    <summary>Work</summary>
                     <a href="javascript:void (0);">[edit]</a>
                     <p>Dell Technology</p>
                     <p>Sales</p>
-                </qv-details>
-                <qv-details>
-                    <h3>Education</h3>
+                </details>
+                <details open><!--life story -->
+                    <summary>Education</summary>
                     <a href="javascript:void (0);">[edit]</a>
                     <p>Dell Technology</p>
                     <p>Sales</p>
-                </qv-details>
-            </qv-lifestory>
-        </qv-aside>
-        <qv-cashsheet>
-            <qv-cashform>
+                </details>
+            </article>
+        </aside>
+        <section> <!--Cash Content section -->
+            <qv-cashform> <!--Cash form -->
                 <form>
-                <qv-heading>
-                    <h2>Cash Assets</h2>
-                    <hr>
-                    <qv-twoline>
-                        <qv-formgroup>
-                            <label for="country">Country</label>
-                            <input type="text"name="country" required>
+                    <qv-heading>
+                        <h2>Cash Assets</h2>
+                        <hr>
+                        <qv-twoline>
+                            <fieldset>
+                                <label for="country">Country</label>
+                                <input type="text"name="country" required>
 
-                            <label for="bank">Bank Name</label>
-                            <input type="text" name="bank" required>
+                                <label for="bank">Bank Name</label>
+                                <input type="text" name="bank" required>
 
-                            <label for="identifier">Identifier</label>
-                            <input type="text" name="identifier" required>
-                        </qv-formgroup>
-                        <qv-formgroup>
-                            <qv-radio>
-                                <input type="radio" name="saving" value="Saving" checked>
-                                <label for="saving">SAVING</label>
-                            </qv-radio>
-                            <qv-radio>
-                                <input type="radio" name="saving" value="Checking">
-                                <label for="checking">CHECKING</label>
-                            </qv-radio>
-                            <qv-formright>
-                                <qv-selectwrap>
-                                    <label for="amount">Amount</label>
-                                    <qv-select>
-                                        <select name="qv-select" id="select">
-                                            <option value="SPG" selected>SPG</option>
-                                            <option value="CHK">CHK</option>
-                                        </select>
-                                        <input type="text" name="amount">
-                                    </qv-select>
-                                </qv-selectwrap>
-                                <qv-selectwrap>
-                                    <label for="rate">Rate</label>
-                                    <qv-rate>
-                                        <input type="text" name="rate">
-                                        <i>%</i>
-                                    </qv-rate>
-                                </qv-selectwrap>
-                            </qv-formright>
-                        </qv-formgroup>
-                    </qv-twoline>
-                </qv-heading>
+                                <label for="identifier">Identifier</label>
+                                <input type="text" name="identifier" required>
+                            </fieldset>
+                            <fieldset>
+                                <qv-radio>
+                                    <input type="radio" name="saving" value="Saving" checked>
+                                    <label for="saving">SAVING</label>
+                                </qv-radio>
+                                <qv-radio>
+                                    <input type="radio" name="saving" value="Checking">
+                                    <label for="checking">CHECKING</label>
+                                </qv-radio>
+                                <qv-formright>
+                                    <qv-selectwrap>
+                                        <label for="amount">Amount</label>
+                                        <qv-select>
+                                            <select name="qv-select" id="select">
+                                                <option value="SPG" selected>SPG</option>
+                                                <option value="CHK">CHK</option>
+                                            </select>
+                                            <input type="text" name="amount">
+                                        </qv-select>
+                                    </qv-selectwrap>
+                                    <qv-selectwrap>
+                                        <label for="rate">Rate</label>
+                                        <qv-rate>
+                                            <input type="text" name="rate">
+                                            <i>%</i>
+                                        </qv-rate>
+                                    </qv-selectwrap>
+                                </qv-formright>
+                            </fieldset>
+                        </qv-twoline>
+                    </qv-heading>
                     <qv-formgroup>
                         <button type="submit" class="fill-blue">Save</button>
                     </qv-formgroup>
                 </form>
             </qv-cashform>
-            <qv-invest>
-                <qv-investicon>
+            <article> <!--Cash type icons group -->
+                <figure>
                     <i class="profile"></i>
                     <h4 class="violet">Profile</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="cash"></i>
                     <h4 class="teal">Cash</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="property"></i>
                     <h4 class="brown">Property</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="investment"></i>
                     <h4 class="green">Investment</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="pension"></i>
                     <h4 class="yellow">Pension</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="business"></i>
                     <h4 class="black">Business</h4>
-                </qv-investicon>
-                <qv-investicon>
+                </figure>
+                <figure>
                     <i class="msc"></i>
                     <h4 class="biscuit">Msc</h4>
-                </qv-investicon>
-            </qv-invest>
-            <qv-footer>
+                </figure>
+            </article>
+            <footer> <!--Cash footer -->
                 <hr>
                 <h2>Interview</h2>
-                <qv-foterlinks>
+                <nav>
                     <a href="javascript:void (0);" class="teal">Cash</a>
                     <a href="javascript:void (0);" class="brown">Property</a>
                     <a href="javascript:void (0);" class="green">Investment</a>
                     <a href="javascript:void (0);" class="yellow">Pension</a>
                     <a href="javascript:void (0);" class="black">Business</a>
                     <a href="javascript:void (0);" class="biscuit">Miscellaneous</a>
-                </qv-foterlinks>
+                </nav>
                 <p>Chase-Bank-1234</p>
-            </qv-footer>
-        </qv-cashsheet>
+            </footer>
+        </section>
     </main>
 </body>
 </html>

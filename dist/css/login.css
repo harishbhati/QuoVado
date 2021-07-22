@@ -136,7 +136,7 @@ qv-radio {
 }
 
 /*select*/
-qv-login {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,8 @@ qv-login {
   height: 100%;
 }
 
-qv-loginform {
+/*Login form section*/
+section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -154,19 +155,21 @@ qv-loginform {
   padding: 50px 25px 40px;
   border: 1px solid #e1e1e1;
   border-radius: 5px;
+  /*Login form title*/
+  /*Login form*/
 }
-qv-loginform h1 {
+section h1 {
   color: #1f0488;
   font: 600 32px/1.4 "Roboto", sans-serif;
   margin-bottom: 30px;
 }
-qv-loginform form {
+section form {
   display: flex;
   gap: 15px;
   flex-direction: column;
   width: 100%;
 }
-qv-loginform form button {
+section form button {
   width: 100%;
 }
 

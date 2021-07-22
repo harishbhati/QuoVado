@@ -1,15 +1,11 @@
-qv-header {
+/*Cash Header*/
+header {
     padding: 10px 20px;
     border-bottom: 1px solid $border-color;
     display: block;
     img{
         max-width: 155px;
     }
-}
-main {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    height: calc(100% - 77px);
 }
 
 h2{
@@ -25,65 +21,72 @@ hr{
     max-width: 100%;
     margin-bottom: 20px;
 }
-/*aside*/
-qv-aside{
+/*cash aside*/
+aside{
     border-right: 1px solid $border-color;
     h2{
         margin-bottom: 30px;
     }
-}
-qv-search {
-    display: grid;
-    grid-template-columns: 1fr 40px;
-    input[type=text], button{
-        border-radius: 0; 
-        min-width: auto;
-        background: $blue;
-        color: $white;
-        border:none
-    }
-    button{
-        padding: 0;
-        border-left: 1px solid rgb(255 255 255 / 60%);
-        i{
-            display: block;
-            width: 38px;
-            height: 25px;
-            background: url(../../images/icons_sprites.png) -265px -13px;
-            margin: 0;
+    section {
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        input[type=text], button{
+            border-radius: 0; 
+            min-width: auto;
+            background: $blue;
+            color: $white;
+            border:none
+        }
+        button{
+            padding: 0;
+            border-left: 1px solid rgb(255 255 255 / 60%);
+            i{
+                display: block;
+                width: 38px;
+                height: 25px;
+                background: url(../../images/icons_sprites.png) -265px -13px;
+                margin: 0;
+            }
+        }
+        input::placeholder{
+            color: $white;
         }
     }
-    input::placeholder{
-        color: $white;
-    }
-}
-qv-lifestory {
-    padding: 30px 20px;
-    display: block;
-}
-qv-details {
-    margin-bottom: 35px;
-    display: block;
-    position: relative;
-    h3{
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    p{
-        font-size: 14px;
-    }
-    a{
-        cursor: pointer;
-        color: $blue;
-        position: absolute;
-        right: 10px;
-        top: 0;
+    article {
+        padding: 30px 20px;
+        display: block;
+        details {
+            margin-bottom: 35px;
+            display: block;
+            position: relative;
+            summary{
+                text-transform: uppercase;
+                font-size: 16px;
+                list-style: none;
+            }
+            p{
+                font-size: 14px;
+            }
+            a{
+                cursor: pointer;
+                color: $blue;
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+        }
     }
 }
 /*Cash Assets container*/
-qv-cashsheet{
-    padding: 30px; 
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: calc(100% - 77px);
+    &>section{
+        padding: 30px; 
+    }
 }
+/*Cash form*/
 qv-cashform{
     display: block;
     max-width: 1200px;
@@ -138,14 +141,14 @@ qv-rate{
         border-bottom-right-radius: 0;
     }
 }
-qv-formgroup {
+fieldset {
     display: block;
 }
 qv-twoline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    qv-formgroup:last-child{
+    fieldset:last-child{
         padding: 40px 20px 0;
     }
 }
@@ -154,28 +157,16 @@ qv-formright {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-/**/
-qv-invest{
+/*Cash type icons group*/
+article{
     @include quo-flex(flex, wrap, null, null, 60px);
     max-width: 1400px;
     margin: 50px auto 20px;
 }
-qv-investicon {
+figure {
     @include quo-flex(flex, wrap, null, center, 7px, column);
     i{
         display: block;
-    }
-}
-qv-footer{
-    display: block;
-    p{
-        margin-top: 20px;
-    }
-}
-qv-foterlinks {
-    @include quo-flex(flex, wrap, space-between);
-    a{
-        text-transform: uppercase;
     }
 }
 select{
@@ -216,6 +207,19 @@ select{
     width: 38px;
     height: 33px;
     background: url('../../images/icons_sprites.png') -209px -13px;
+}
+/*Cash footer*/
+footer{
+    display: block;
+    p{
+        margin-top: 20px;
+    }
+    nav{
+        @include quo-flex(flex, wrap, space-between);
+        a{
+            text-transform: uppercase;
+        }
+    }
 }
 .violet{
     color:$violet;
