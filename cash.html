@@ -63,7 +63,13 @@
                         <qv-twoline>
                             <fieldset>
                                 <label for="country">Country</label>
-                                <input type="text"name="country" required>
+                                <qv-selectright>
+                                    <i>SPG</i>
+                                    <select name="qv-select" id="select">
+                                        <option value="Singapore" selected>Singapore</option>
+                                        <option value="India">India</option>
+                                    </select>
+                                </qv-selectright>
 
                                 <label for="bank">Bank Name</label>
                                 <input type="text" name="bank" required>
@@ -83,13 +89,13 @@
                                 <qv-formright>
                                     <qv-selectwrap>
                                         <label for="amount">Amount</label>
-                                        <qv-select>
+                                        <qv-selectleft>
                                             <select name="qv-select" id="select">
                                                 <option value="SPG" selected>SPG</option>
                                                 <option value="CHK">CHK</option>
                                             </select>
                                             <input type="text" name="amount">
-                                        </qv-select>
+                                        </qv-selectleft>
                                     </qv-selectwrap>
                                     <qv-selectwrap>
                                         <label for="rate">Rate</label>
@@ -107,43 +113,57 @@
                     </qv-formgroup>
                 </form>
             </qv-cashform>
-            <article> <!--Cash type icons group -->
+            <article> <!--QV-LC Cash type icons group -->
                 <figure>
-                    <i class="profile"></i>
-                    <h4 class="violet">Profile</h4>
+                    <a href="javascript:void (0);">
+                        <i class="profile"></i>
+                        <h4 class="violet">Profile</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="cash"></i>
-                    <h4 class="teal">Cash</h4>
+                    <a href="cash.html">
+                        <i class="cash"></i>
+                        <h4 class="teal">Cash</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="property"></i>
-                    <h4 class="brown">Property</h4>
+                    <a href="qv-vc-property.html">
+                        <i class="property"></i>
+                        <h4 class="brown">Property</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="investment"></i>
-                    <h4 class="green">Investment</h4>
+                    <a href="qv-vc-investment.html">
+                        <i class="investment"></i>
+                        <h4 class="green">Investment</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="pension"></i>
-                    <h4 class="yellow">Pension</h4>
+                    <a href="javascript:void (0);">
+                        <i class="pension"></i>
+                        <h4 class="yellow">Pension</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="business"></i>
-                    <h4 class="black">Business</h4>
+                    <a href="javascript:void (0);">
+                        <i class="business"></i>
+                        <h4 class="black">Business</h4>
+                    </a>
                 </figure>
                 <figure>
-                    <i class="msc"></i>
-                    <h4 class="biscuit">Msc</h4>
+                    <a href="javascript:void (0);">
+                        <i class="msc"></i>
+                        <h4 class="biscuit">Msc</h4>
+                    </a>
                 </figure>
             </article>
             <footer> <!--Cash footer -->
                 <hr>
                 <h2>Interview</h2>
                 <nav>
-                    <a href="javascript:void (0);" class="teal">Cash</a>
-                    <a href="javascript:void (0);" class="brown">Property</a>
-                    <a href="javascript:void (0);" class="green">Investment</a>
+                    <a href="cash.html" class="teal">Cash</a>
+                    <a href="qv-vc-property.html" class="brown">Property</a>
+                    <a href="qv-vc-investment.html" class="green">Investment</a>
                     <a href="javascript:void (0);" class="yellow">Pension</a>
                     <a href="javascript:void (0);" class="black">Business</a>
                     <a href="javascript:void (0);" class="biscuit">Miscellaneous</a>

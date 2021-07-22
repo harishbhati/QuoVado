@@ -1,0 +1,23 @@
+/*QV-VC Header*/
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid $border-color;
+    display: block;
+    img{
+        max-width: 155px;
+    }
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $blue; 
+    margin-bottom: 10px;
+}
+hr{
+    display: block;
+    border-bottom: 1px solid $border-color;
+    max-width: 100%;
+    margin-bottom: 20px;
+}

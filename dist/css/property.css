@@ -551,4 +551,8 @@ main > section {
   padding: 30px;
 }
 
-/*# sourceMappingURL=cash.css.map */
+qv-twoline fieldset:last-child {
+  padding: 0;
+}
+
+/*# sourceMappingURL=property.css.map */

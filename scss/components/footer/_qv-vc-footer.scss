@@ -1,0 +1,102 @@
+/*QV-VC Footer*/
+article{
+    @include quo-flex(flex, wrap, null, null, 60px);
+    max-width: 1400px;
+    margin: 50px auto 20px;
+}
+figure {
+    cursor: pointer;
+    position: relative;
+    a{
+        @include quo-flex(flex, wrap, null, center, 7px, column);
+        position: relative;
+    }
+    &:first-child{
+        margin-right: 65px;
+        a::after{
+            content: '';
+            background: $border-color;
+            width:2px;
+            height: 80%;
+            position: absolute;
+            right: -55px;
+        }
+    }
+    i{
+        display: block;
+    }
+}
+select{
+    background: url('../../images/down-arrow.png') no-repeat right 10px center/10px;
+    cursor: pointer;
+}
+.profile{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -72px;
+}
+.cash{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -77px -121px;
+}
+.property{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -13px -180px;
+}
+.investment{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -141px -121px;
+}
+.pension{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -72px;
+}
+.business{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -13px -121px;
+}
+.msc{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -13px;
+}
+/*Cash footer*/
+footer{
+    display: block;
+    p{
+        margin-top: 20px;
+    }
+    nav{
+        @include quo-flex(flex, wrap, space-between);
+        a{
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+.violet{
+    color:$violet;
+}
+.teal{
+    color:$teal;
+}
+.brown{
+    color:$brown;
+}
+.green{
+    color:$green;
+}
+.yellow{
+    color:$yellow;
+}
+.black{
+    color:$black;
+}
+.biscuit{
+    color:$biscuit;
+}
