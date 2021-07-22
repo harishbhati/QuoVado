@@ -1,0 +1,56 @@
+/*QV-VC Aside*/
+aside{
+    border-right: 1px solid $border-color;
+    h2{
+        margin-bottom: 30px;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        input[type=text], button{
+            border-radius: 0; 
+            min-width: auto;
+            background: $blue;
+            color: $white;
+            border:none
+        }
+        button{
+            padding: 0;
+            border-left: 1px solid rgb(255 255 255 / 60%);
+            i{
+                display: block;
+                width: 38px;
+                height: 25px;
+                background: url(../../images/icons_sprites.png) -265px -13px;
+                margin: 0;
+            }
+        }
+        input::placeholder{
+            color: $white;
+        }
+    }
+    article {
+        padding: 30px 20px;
+        display: block;
+        details {
+            margin-bottom: 35px;
+            display: block;
+            position: relative;
+            summary{
+                text-transform: uppercase;
+                font-size: 16px;
+                list-style: none;
+            }
+            p{
+                font-size: 14px;
+            }
+            a{
+                cursor: pointer;
+                color: $blue;
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+        }
+    }
+}

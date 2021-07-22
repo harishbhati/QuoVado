@@ -1,0 +1,9 @@
+/*QV-VC Main*/
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: calc(100% - 77px);
+    &>section{
+        padding: 30px; 
+    }
+}
