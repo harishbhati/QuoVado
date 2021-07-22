@@ -1,0 +1,28 @@
+main {
+    @include quo-flex(flex, wrap, center, center);
+    width: 100%;
+    height: 100%;
+}
+/*Login form section*/
+section {
+    @include quo-flex(flex, null, null, center, null, column);
+    background: $white;
+    width: 400px;
+    padding: 50px 25px 40px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    /*Login form title*/
+    h1{
+        color: $blue;
+        font: 600 32px/1.4 'Roboto', sans-serif;
+        margin-bottom: 30px;
+    }
+    /*Login form*/
+    form{
+        @include quo-flex(flex, null, null, null, 15px, column);
+        width: 100%;
+        button{
+            width: 100%;
+        }
+    }
+}

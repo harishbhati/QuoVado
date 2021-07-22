@@ -1,0 +1,244 @@
+/*Cash Header*/
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid $border-color;
+    display: block;
+    img{
+        max-width: 155px;
+    }
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $blue; 
+    margin-bottom: 10px;
+}
+hr{
+    display: block;
+    border-bottom: 1px solid $border-color;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+/*cash aside*/
+aside{
+    border-right: 1px solid $border-color;
+    h2{
+        margin-bottom: 30px;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        input[type=text], button{
+            border-radius: 0; 
+            min-width: auto;
+            background: $blue;
+            color: $white;
+            border:none
+        }
+        button{
+            padding: 0;
+            border-left: 1px solid rgb(255 255 255 / 60%);
+            i{
+                display: block;
+                width: 38px;
+                height: 25px;
+                background: url(../../images/icons_sprites.png) -265px -13px;
+                margin: 0;
+            }
+        }
+        input::placeholder{
+            color: $white;
+        }
+    }
+    article {
+        padding: 30px 20px;
+        display: block;
+        details {
+            margin-bottom: 35px;
+            display: block;
+            position: relative;
+            summary{
+                text-transform: uppercase;
+                font-size: 16px;
+                list-style: none;
+            }
+            p{
+                font-size: 14px;
+            }
+            a{
+                cursor: pointer;
+                color: $blue;
+                position: absolute;
+                right: 10px;
+                top: 0;
+            }
+        }
+    }
+}
+/*Cash Assets container*/
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: calc(100% - 77px);
+    &>section{
+        padding: 30px; 
+    }
+}
+/*Cash form*/
+qv-cashform{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    h2{
+        text-align: center;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-gap: 50px;
+        align-items: end;
+        input,select{
+            margin-bottom: 15px;
+        }
+        button{
+            width: 100%;
+        }
+    }
+}
+qv-select {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    input[type="text"]{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+    }
+    select{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+qv-rate{
+    display: grid;
+    grid-template-columns: 1fr 50px; 
+    i{
+        background: #fcfcfc;
+        padding: 10px;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 15px;
+        text-align: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+    }
+    input[type="text"]{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+fieldset {
+    display: block;
+}
+qv-twoline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    fieldset:last-child{
+        padding: 40px 20px 0;
+    }
+}
+qv-formright {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+/*Cash type icons group*/
+article{
+    @include quo-flex(flex, wrap, null, null, 60px);
+    max-width: 1400px;
+    margin: 50px auto 20px;
+}
+figure {
+    @include quo-flex(flex, wrap, null, center, 7px, column);
+    i{
+        display: block;
+    }
+}
+select{
+    background: url('../../images/down-arrow.png') no-repeat right 10px center;
+    cursor: pointer;
+}
+.profile{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -72px;
+}
+.cash{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -77px -121px;
+}
+.property{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -13px -180px;
+}
+.investment{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -141px -121px;
+}
+.pension{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -72px;
+}
+.business{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -13px -121px;
+}
+.msc{
+    width: 38px;
+    height: 33px;
+    background: url('../../images/icons_sprites.png') -209px -13px;
+}
+/*Cash footer*/
+footer{
+    display: block;
+    p{
+        margin-top: 20px;
+    }
+    nav{
+        @include quo-flex(flex, wrap, space-between);
+        a{
+            text-transform: uppercase;
+        }
+    }
+}
+.violet{
+    color:$violet;
+}
+.teal{
+    color:$teal;
+}
+.brown{
+    color:$brown;
+}
+.green{
+    color:$green;
+}
+.yellow{
+    color:$yellow;
+}
+.black{
+    color:$black;
+}
+.biscuit{
+    color:$biscuit;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QyoVado Creator">
+    <meta name="author" content="QyoVado">
+    <title>QyoVado - Cash Assets</title>
+    <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
+    <link href="dist/css/cash.css" rel='stylesheet' type='text/css' media='all'>
+</head>
+<body>
+    
+    <header><!--Cash Header -->
+        <img src="images/quovado.png" alt="QuoVado">
+    </header>
+    
+    <main><!--Cash main -->
+        <aside><!--Cash sidebar -->
+            <section>
+                <input type="text" placeholder="Search">
+                <button class="search" type="button"><i></i></button>
+            </section>
+            <article>
+                <h2>Life Story</h2>
+                <details open><!--life story -->
+                    <summary>John Smith</summary>
+                    <p>50 Years old</p>
+                </details>
+                <details open><!--life story -->
+                    <summary>Residency</summary>
+                    <a href="javascript:void (0);">[edit]</a>
+                    <p>Singapore</p>
+                    <p>10 Years</p>
+                </details>
+                <details open><!--life story -->
+                    <summary>Family</summary>
+                    <a href="javascript:void (0);">[edit]</a>
+                    <p>Married</p>
+                    <p>3 Children</p>
+                </details>
+                <details open> <!--life story -->
+                    <summary>Work</summary>
+                    <a href="javascript:void (0);">[edit]</a>
+                    <p>Dell Technology</p>
+                    <p>Sales</p>
+                </details>
+                <details open><!--life story -->
+                    <summary>Education</summary>
+                    <a href="javascript:void (0);">[edit]</a>
+                    <p>Dell Technology</p>
+                    <p>Sales</p>
+                </details>
+            </article>
+        </aside>
+        <section> <!--Cash Content section -->
+            <qv-cashform> <!--Cash form -->
+                <form>
+                    <qv-heading>
+                        <h2>Cash Assets</h2>
+                        <hr>
+                        <qv-twoline>
+                            <fieldset>
+                                <label for="country">Country</label>
+                                <input type="text"name="country" required>
+
+                                <label for="bank">Bank Name</label>
+                                <input type="text" name="bank" required>
+
+                                <label for="identifier">Identifier</label>
+                                <input type="text" name="identifier" required>
+                            </fieldset>
+                            <fieldset>
+                                <qv-radio>
+                                    <input type="radio" name="saving" value="Saving" checked>
+                                    <label for="saving">SAVING</label>
+                                </qv-radio>
+                                <qv-radio>
+                                    <input type="radio" name="saving" value="Checking">
+                                    <label for="checking">CHECKING</label>
+                                </qv-radio>
+                                <qv-formright>
+                                    <qv-selectwrap>
+                                        <label for="amount">Amount</label>
+                                        <qv-select>
+                                            <select name="qv-select" id="select">
+                                                <option value="SPG" selected>SPG</option>
+                                                <option value="CHK">CHK</option>
+                                            </select>
+                                            <input type="text" name="amount">
+                                        </qv-select>
+                                    </qv-selectwrap>
+                                    <qv-selectwrap>
+                                        <label for="rate">Rate</label>
+                                        <qv-rate>
+                                            <input type="text" name="rate">
+                                            <i>%</i>
+                                        </qv-rate>
+                                    </qv-selectwrap>
+                                </qv-formright>
+                            </fieldset>
+                        </qv-twoline>
+                    </qv-heading>
+                    <qv-formgroup>
+                        <button type="submit" class="fill-blue">Save</button>
+                    </qv-formgroup>
+                </form>
+            </qv-cashform>
+            <article> <!--Cash type icons group -->
+                <figure>
+                    <i class="profile"></i>
+                    <h4 class="violet">Profile</h4>
+                </figure>
+                <figure>
+                    <i class="cash"></i>
+                    <h4 class="teal">Cash</h4>
+                </figure>
+                <figure>
+                    <i class="property"></i>
+                    <h4 class="brown">Property</h4>
+                </figure>
+                <figure>
+                    <i class="investment"></i>
+                    <h4 class="green">Investment</h4>
+                </figure>
+                <figure>
+                    <i class="pension"></i>
+                    <h4 class="yellow">Pension</h4>
+                </figure>
+                <figure>
+                    <i class="business"></i>
+                    <h4 class="black">Business</h4>
+                </figure>
+                <figure>
+                    <i class="msc"></i>
+                    <h4 class="biscuit">Msc</h4>
+                </figure>
+            </article>
+            <footer> <!--Cash footer -->
+                <hr>
+                <h2>Interview</h2>
+                <nav>
+                    <a href="javascript:void (0);" class="teal">Cash</a>
+                    <a href="javascript:void (0);" class="brown">Property</a>
+                    <a href="javascript:void (0);" class="green">Investment</a>
+                    <a href="javascript:void (0);" class="yellow">Pension</a>
+                    <a href="javascript:void (0);" class="black">Business</a>
+                    <a href="javascript:void (0);" class="biscuit">Miscellaneous</a>
+                </nav>
+                <p>Chase-Bank-1234</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

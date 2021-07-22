@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*:where(:not(iframe, canvas, img,svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+  box-sizing: border-box;
+}
+
+body {
+  font: 500 15px/1.4 "Roboto", sans-serif;
+  background: #fff;
+  color: #4e4e4e;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  border: 1px solid #404040;
+  padding: 10px 20px;
+  min-width: 115px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.outline {
+  background: #fff;
+}
+
+.fill {
+  background: #404040;
+  color: #fff;
+}
+
+.fill-blue {
+  background: #1f0488;
+  color: #fff;
+  border-color: #1f0488;
+}
+
+input[type=text], input[type=password], select {
+  box-sizing: border-box;
+  background: #fcfcfc;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 13px;
+}
+
+label {
+  color: #1f0488;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+qv-radio {
+  position: relative;
+  margin-right: 25px;
+}
+
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #1f0488;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type=radio]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*select*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/*Login form section*/
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  width: 400px;
+  padding: 50px 25px 40px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  /*Login form title*/
+  /*Login form*/
+}
+section h1 {
+  color: #1f0488;
+  font: 600 32px/1.4 "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+section form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  width: 100%;
+}
+section form button {
+  width: 100%;
+}
+
+/*# sourceMappingURL=login.css.map */
