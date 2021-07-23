@@ -41,7 +41,7 @@ body {
 }
 
 /*inputs,select,password*/
-input[type=text], input[type=password], select {
+input[type=text], input[type=password], select, input[type=date] {
   box-sizing: border-box;
   background: #fcfcfc;
   padding: 10px;
@@ -508,9 +508,6 @@ qv-twoline {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
-qv-twoline fieldset:last-child {
-  padding: 40px 20px 0;
-}
 
 qv-forminline {
   display: grid;
@@ -527,7 +524,7 @@ qv-inlinethree {
 qv-equalthree {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 
 qv-ratepercentage {
@@ -549,10 +546,6 @@ main {
 }
 main > section {
   padding: 30px;
-}
-
-qv-twoline fieldset:last-child {
-  padding: 0;
 }
 
 /*# sourceMappingURL=property.css.map */

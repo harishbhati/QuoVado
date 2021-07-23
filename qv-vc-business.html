@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="QyoVado Creator">
     <meta name="author" content="QyoVado">
-    <title>QyoVado - Investment Form</title>
+    <title>QyoVado - Business Form</title>
     <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
-    <link href="dist/css/investnment.css" rel='stylesheet' type='text/css' media='all'>
+    <link href="dist/css/business.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
     
@@ -58,7 +58,7 @@
             <qv-cashform> <!--QV-LC form -->
                 <form>
                     <qv-heading>
-                        <h2>Investment Assets</h2>
+                        <h2>Business Assets</h2>
                         <hr>
                         <qv-twoline><!--QV-VC first column-->
                             <fieldset><!--QV-VC propert first column-->
@@ -70,85 +70,99 @@
                                         <option value="India">India</option>
                                     </select>
                                 </qv-selectright>
-                                <qv-forminline><!--Intitution-->
-                                    <qv-radio>
-                                        <input type="radio" name="shares" value="Institution" checked>
-                                        <label for="institution">Institution</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="shares" value="Shares">
-                                        <label for="shares">Shares</label>
-                                    </qv-radio>
+
+                                <qv-inputgroup><!--Business Name-->
+                                    <label for="business">Business Name</label>
+                                    <input type="text" name="business" required>
+                                </qv-inputgroup>
+
+                                <qv-inputgroup><!--Field Or Selector-->
+                                    <label for="business">Field Or Selector</label>
+                                    <select name="qv-select" id="select">
+                                        <option value="select" selected>Select</option>
+                                        <option value="Select_1">Select 1</option>
+                                    </select>
+                                </qv-inputgroup>
+                                <qv-forminline>
+                                    <qv-inputgroup><!--Business Value-->
+                                        <label for="amount">Business Value</label>
+                                        <qv-labelinput>
+                                            <i>SGP</i>
+                                            <input type="text" name="business">
+                                        </qv-labelinput>
+                                    </qv-inputgroup>
+                                    <qv-inputgroup><!--Owned-->
+                                        <qv-selectwrap>
+                                            <label for="amount">Owned</label>
+                                            <qv-rate>
+                                                <input type="text" name="owned">
+                                                <i>%</i>
+                                            </qv-rate>
+                                        </qv-selectwrap>
+                                    </qv-inputgroup>
                                 </qv-forminline>
-                                <qv-inputgroup><!--Identifier-->
-                                    <label for="identifier">Identifier</label>
-                                    <input type="text" name="identifier" required>
-                                </qv-inputgroup>
-                                <qv-inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <qv-labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </qv-labelinput>
-                                </qv-inputgroup>
                             </fieldset>
                             <fieldset><!--QV-VC Property purchase middle-->
-                                <qv-forminline><!--Radio Withdraw-->
-                                    <qv-radio>
-                                        <input type="radio" name="withdraw" value="Withdraw" checked>
-                                        <label for="withdraw">Withdraw</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="withdraw" value="Save">
-                                        <label for="save">Save to</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <qv-labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </qv-labelinput>
-                                </qv-inputgroup>
-                                <qv-forminline><!--Radio Monthly-->
-                                    <qv-radio>
-                                        <input type="radio" name="invest" value="Monthly" checked>
-                                        <label for="monthly">Monthly</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="invest" value="Annually">
-                                        <label for="annually">Annually</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-forminline><!--Radio Dividends-->
-                                    <qv-radio class="radio-inline">
-                                        <label for="monthly">Dividends?</label>
-                                        <input type="radio" name="dividends" value="Yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </qv-radio>
-                                    <qv-radio class="radio-inline">
-                                        <label for="monthly">Dividends?</label>
-                                        <input type="radio" name="dividends" value="Yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-equalthree class="align">
-                                    <qv-selectwrap><!--Rate-->
-                                        <label for="rate">Rate</label>
-                                        <qv-ratepercentage>
-                                            <input type="text" name="rate">
-                                            <i>%</i>
-                                        </qv-ratepercentage>
-                                    </qv-selectwrap>
-                                    <qv-checkbox><!--Checkbox Reinvested-->
-                                        <input type="checkbox" name="income" value="Reinvested">
-                                        <label for="reinvested">Reinvested</label>
+                                <qv-equalthree><!--three input in a line-->
+                                    <qv-checkbox><!--Checkbox Salary-->
+                                        <input type="checkbox" name="salary" value="Salary">
+                                        <label for="reinvested">Salary</label>
                                     </qv-checkbox>
-                                    <qv-checkbox><!--Checkbox Withdrawn-->
-                                        <input type="checkbox" name="income" value="Withdrawn">
-                                        <label for="withdrawn">Withdrawn</label>
+                                    <qv-inputgroup><!--Amount-->
+                                        <label for="amount">Amount</label>
+                                        <qv-labelinput>
+                                            <i>SGP</i>
+                                            <input type="text" name="amount">
+                                        </qv-labelinput>
+                                    </qv-inputgroup>
+                                    <qv-checkbox><!--Checkbox Projected-->
+                                        <input type="checkbox" name="projected" value="Projected">
+                                        <label for="projected">Projected?</label>
                                     </qv-checkbox>
                                 </qv-equalthree>
+
+                                <qv-equalthree><!--three input in a line-->
+                                    <qv-checkbox><!--Checkbox Dividends-->
+                                        <input type="checkbox" name="dividends" value="dividends">
+                                        <label for="dividends">Dividends</label>
+                                    </qv-checkbox>
+                                    <qv-inputgroup><!--Amount-->
+                                        <label for="amount">Amount</label>
+                                        <qv-labelinput>
+                                            <i>SGP</i>
+                                            <input type="text" name="amount">
+                                        </qv-labelinput>
+                                    </qv-inputgroup>
+                                    <qv-checkbox><!--Checkbox Projected-->
+                                        <input type="checkbox" name="projected" value="Projected">
+                                        <label for="projected">Projected?</label>
+                                    </qv-checkbox>
+                                </qv-equalthree>
+
+                                <qv-equalthree><!--three input in a line-->
+                                    <qv-checkbox><!--Checkbox Directors Fees-->
+                                        <input type="checkbox" name="directors" value="directors">
+                                        <label for="directors">Directors Fees</label>
+                                    </qv-checkbox>
+                                    <qv-inputgroup><!--Amount-->
+                                        <label for="amount">Amount</label>
+                                        <qv-labelinput>
+                                            <i>SGP</i>
+                                            <input type="text" name="amount">
+                                        </qv-labelinput>
+                                    </qv-inputgroup>
+                                    <qv-checkbox><!--Checkbox Projected-->
+                                        <input type="checkbox" name="projected" value="Projected">
+                                        <label for="projected">Projected?</label>
+                                    </qv-checkbox>
+                                </qv-equalthree>
+                                <qv-forminline>
+                                    <qv-inputgroup><!--Age of Sell or Retirement-->
+                                        <label for="retirement">Age of Sell or Retirement</label>
+                                        <input type="date" name="retirement-age" value="2018-07-22"
+                                        min="2000-01-01" max="2018-12-31">
+                                    </qv-inputgroup>
+                                </qv-forminline>
                             </fieldset>
                         </qv-twoline>
                     </qv-heading>
