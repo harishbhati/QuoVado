@@ -1,6 +1,9 @@
 /*QV-VC Aside*/
-aside{
+qv-sidebar{
     border-right: 1px solid $border-color;
+}
+aside{
+    flex: 0 0 200px;
     h2{
         margin-bottom: 30px;
     }

@@ -11,51 +11,13 @@
     <link href="dist/css/property.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
+   <!--Add  qv-header tag to add header-->
     
-    <header><!--QV-LC Header -->
-        <img src="images/quovado.png" alt="QuoVado">
-    </header>
-    
-    <main><!--QV-LC main -->
-        <aside><!--QV-LC Sidebar -->
-            <section>
-                <input type="text" placeholder="Search">
-                <button class="search" type="button"><i></i></button>
-            </section>
-            <article>
-                <h2>Life Story</h2>
-                <details open><!--life story -->
-                    <summary>John Smith</summary>
-                    <p>50 Years old</p>
-                </details>
-                <details open><!--life story -->
-                    <summary>Residency</summary>
-                    <a href="javascript:void (0);">[edit]</a>
-                    <p>Singapore</p>
-                    <p>10 Years</p>
-                </details>
-                <details open><!--life story -->
-                    <summary>Family</summary>
-                    <a href="javascript:void (0);">[edit]</a>
-                    <p>Married</p>
-                    <p>3 Children</p>
-                </details>
-                <details open> <!--life story -->
-                    <summary>Work</summary>
-                    <a href="javascript:void (0);">[edit]</a>
-                    <p>Dell Technology</p>
-                    <p>Sales</p>
-                </details>
-                <details open><!--life story -->
-                    <summary>Education</summary>
-                    <a href="javascript:void (0);">[edit]</a>
-                    <p>Dell Technology</p>
-                    <p>Sales</p>
-                </details>
-            </article>
-        </aside>
-        <section> <!--QV-LC Content section -->
-            <qv-cashform> <!--QV-LC form -->
+    <main><!--QV-VC main -->
+        <!--Add  qv-sidebar tag to add sidebar-->
+
+        <section> <!--QV-VC Content section -->
+            <qv-cashform> <!--QV-VC form -->
                 <form>
                     <qv-heading>
                         <h2>Property Assets</h2>
@@ -93,7 +55,7 @@
                                         <label for="commercial">Commercial</label>
                                     </qv-radio>
                                 </qv-forminline>
-                                <qv-forminline class="align">
+                                <qv-forminline>
                                     <qv-checkbox><!--Checkbox Income-->
                                         <input type="checkbox" name="income" value="income">
                                         <label for="income">Lease Income</label>
@@ -202,63 +164,8 @@
                     </qv-formgroup>
                 </form>
             </qv-cashform>
-            <article> <!--QV-LC Cash type icons group -->
-                <figure>
-                    <a href="javascript:void (0);">
-                        <i class="profile"></i>
-                        <h4 class="violet">Profile</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="cash.html">
-                        <i class="cash"></i>
-                        <h4 class="teal">Cash</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="qv-vc-property.html">
-                        <i class="property"></i>
-                        <h4 class="brown">Property</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="qv-vc-investment.html">
-                        <i class="investment"></i>
-                        <h4 class="green">Investment</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="qv-vc-pension.html">
-                        <i class="pension"></i>
-                        <h4 class="yellow">Pension</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="qv-vc-business.html">
-                        <i class="business"></i>
-                        <h4 class="black">Business</h4>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="qv-qc-miscellaneous.html.html">
-                        <i class="msc"></i>
-                        <h4 class="biscuit">Msc</h4>
-                    </a>
-                </figure>
-            </article>
-            <footer> <!--QV-VC footer-->
-                <hr>
-                <h2>Interview</h2>
-                <nav>
-                    <a href="cash.html" class="teal">Cash</a>
-                    <a href="qv-vc-property.html" class="brown">Property</a>
-                    <a href="qv-vc-investment.html" class="green">Investment</a>
-                    <a href="qv-vc-pension.html" class="yellow">Pension</a>
-                    <a href="qv-vc-business.html" class="black">Business</a>
-                    <a href="qv-qc-miscellaneous.html.html" class="biscuit">Miscellaneous</a>
-                </nav>
-                <p>Chase-Bank-1234</p>
-            </footer>
+            
+            <!--Add  qv-footer tag to add footer-->
         </section>
     </main>
 </body>

@@ -1,9 +1,10 @@
 /*QV-VC Main*/
 main {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    display: flex;
     height: calc(100% - 77px);
     &>section{
         padding: 30px; 
+        margin-inline: auto;
+        flex: 0 0 calc(100% - 200px);
     }
 }

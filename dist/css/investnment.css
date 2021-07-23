@@ -3,12 +3,6 @@
   align-items: center;
 }
 
-.radio-inline {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -213,8 +207,12 @@ hr {
 }
 
 /*QV-VC Aside*/
-aside {
+qv-sidebar {
   border-right: 1px solid #e1e1e1;
+}
+
+aside {
+  flex: 0 0 200px;
 }
 aside h2 {
   margin-bottom: 30px;
@@ -540,12 +538,23 @@ qv-ratepercentage i {
 
 /*QV-VC Main*/
 main {
-  display: grid;
-  grid-template-columns: 200px 1fr;
+  display: flex;
   height: calc(100% - 77px);
 }
 main > section {
   padding: 30px;
+  margin-inline: auto;
+  flex: 0 0 calc(100% - 200px);
+}
+
+qv-radio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+qv-checkbox {
+  align-self: center;
 }
 
 /*# sourceMappingURL=investnment.css.map */
