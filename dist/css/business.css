@@ -548,8 +548,8 @@ main > section {
   padding: 30px;
 }
 
-qv-twoline fieldset:last-child {
-  padding: 40px 20px 0;
+qv-equalthree {
+  align-items: center;
 }
 
-/*# sourceMappingURL=cash.css.map */
+/*# sourceMappingURL=business.css.map */

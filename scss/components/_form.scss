@@ -102,9 +102,6 @@ qv-twoline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    fieldset:last-child{
-        padding: 40px 20px 0;
-    }
 }
 qv-forminline {
     display: grid;
@@ -119,7 +116,7 @@ qv-inlinethree {
 qv-equalthree {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 qv-ratepercentage{
     display: flex;
