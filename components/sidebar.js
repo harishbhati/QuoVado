@@ -1,7 +1,7 @@
 class QvSidebar extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-            <aside><!--Cash sidebar -->
+            <aside><!--QV-VC sidebar -->
                 <section>
                     <input type="text" placeholder="Search">
                     <button class="search" type="button"><i></i></button>

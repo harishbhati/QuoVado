@@ -48,16 +48,17 @@ input[type=text], input[type=password], select, input[type=date] {
 label {
   color: #1f0488;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 13px;
+  font-weight: 400;
 }
 
 /*Radio and Checkbox*/
-qv-radio {
+radio {
   margin-bottom: 5px;
 }
 
-qv-radio, qv-checkbox {
+radio, checkbox {
   position: relative;
   margin-right: 25px;
 }
@@ -83,7 +84,7 @@ qv-radio, qv-checkbox {
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
-  color: #666;
+  margin-bottom: 15px;
 }
 
 [type=checkbox]:checked + label {
@@ -161,10 +162,10 @@ qv-radio, qv-checkbox {
 
 button {
   cursor: pointer;
-  font: inherit;
+  font: 400 14px/1.5 "Roboto", sans-serif;
   outline: 0;
   border: 1px solid #404040;
-  padding: 10px 20px;
+  padding: 5px 20px;
   min-width: 115px;
   border-radius: 5px;
   text-align: center;
@@ -276,8 +277,18 @@ article {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
+}
+
+/*QV-VC Save Button and Action icons*/
+qv-savebutton {
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  align-items: center;
   max-width: 1400px;
   margin: 50px auto 20px;
+}
+qv-savebutton .fill-blue {
+  min-width: 180px;
 }
 
 figure {
@@ -291,6 +302,10 @@ figure a {
   gap: 7px;
   flex-direction: column;
   position: relative;
+}
+figure h4 {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 figure:first-child {
   margin-right: 65px;
@@ -400,46 +415,43 @@ footer nav a {
 }
 
 /*QV-VC Form*/
-qv-cashform {
+qv-form {
   display: block;
   max-width: 1300px;
   margin: auto;
 }
-qv-cashform h2 {
+qv-form h2 {
   text-align: center;
 }
-qv-cashform form {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  grid-gap: 50px;
-  align-items: end;
+qv-form form {
+  display: block;
 }
-qv-cashform form input, qv-cashform form select {
+qv-form form input, qv-form form select {
   margin-bottom: 15px;
 }
-qv-cashform form button {
+qv-form form button {
   width: 100%;
 }
 
-qv-selectleft {
+selectleft {
   display: grid;
   grid-template-columns: 80px 1fr;
 }
-qv-selectleft input[type=text] {
+selectleft input[type=text] {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
 }
-qv-selectleft select {
+selectleft select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-qv-selectright {
+selectright {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-qv-selectright i {
+selectright i {
   background: #fcfcfc;
   padding: 10px;
   border: 1px solid #e1e1e1;
@@ -451,17 +463,17 @@ qv-selectright i {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-qv-selectright select {
+selectright select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
 }
 
-qv-labelinput {
+labelinput {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-qv-labelinput i {
+labelinput i {
   background: #fcfcfc;
   padding: 10px;
   border: 1px solid #e1e1e1;
@@ -473,17 +485,17 @@ qv-labelinput i {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-qv-labelinput input[type=text] {
+labelinput input[type=text] {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: none;
 }
 
-qv-rate {
+rate {
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 30px;
 }
-qv-rate i {
+rate i {
   background: #fcfcfc;
   padding: 10px;
   border: 1px solid #e1e1e1;
@@ -496,7 +508,7 @@ qv-rate i {
   border-bottom-left-radius: 0;
   border-left: none;
 }
-qv-rate input[type=text] {
+rate input[type=text] {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -505,19 +517,47 @@ fieldset {
   display: block;
 }
 
+/*Form Columna*/
+form-twocolumn {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(325px, 25%));
+  gap: 50px;
+  justify-content: center;
+}
+
+form-threecolumn {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 50px;
+  justify-content: center;
+}
+
+form-fourcolumn {
+  display: grid;
+  grid-template-columns: 15% repeat(3, calc((85% - 150px)/3));
+  gap: 50px;
+  justify-content: center;
+}
+
+input-twocolumn {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 8px;
+}
+
 qv-twoline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
 
-qv-threecolumn {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+radioinline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-qv-forminline {
+forminline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -535,15 +575,13 @@ qv-equalthree {
   gap: 15px;
 }
 
-qv-ratepercentage {
+ratepercentage {
   display: flex;
   align-items: center;
 }
-qv-ratepercentage input[type=text] {
-  margin: 0;
-}
-qv-ratepercentage i {
+ratepercentage i {
   padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 /*QV-VC Main*/

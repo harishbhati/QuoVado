@@ -11,14 +11,15 @@ input[type="text"],input[type="password"],select,input[type="date"]{
 label{
     color: $blue;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 13px;
+    font-weight: 400;
 }
 /*Radio and Checkbox*/
-qv-radio{
+radio{
     margin-bottom: 5px;
 }
-qv-radio,qv-checkbox{
+radio,checkbox{
     position: relative;
     margin-right: 25px;
 }
@@ -43,7 +44,7 @@ qv-radio,qv-checkbox{
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #666;
+    margin-bottom: 15px;
 }
 [type="checkbox"]:checked + label{
 color: $blue;

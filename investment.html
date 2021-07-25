@@ -17,111 +17,117 @@
         <!--Add  qv-sidebar tag to add sidebar-->
 
         <section> <!--QV-VC Content section -->
-            <qv-cashform> <!--QV-VC form -->
-                <form>
-                    <qv-heading>
-                        <h2>Investment Assets</h2>
-                        <hr>
-                        <qv-twoline><!--QV-VC first column-->
-                            <fieldset><!--QV-VC propert first column-->
-                                <label for="country">Country</label>
-                                <qv-selectright><!--Country-->
-                                    <i>SPG</i>
-                                    <select name="qv-select" id="select">
-                                        <option value="Singapore" selected>Singapore</option>
-                                        <option value="India">India</option>
-                                    </select>
-                                </qv-selectright>
-                                <qv-forminline><!--Intitution-->
-                                    <qv-radio>
-                                        <input type="radio" name="shares" value="Institution" checked>
-                                        <label for="institution">Institution</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="shares" value="Shares">
-                                        <label for="shares">Shares</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-inputgroup><!--Identifier-->
-                                    <label for="identifier">Identifier</label>
-                                    <input type="text" name="identifier" required>
-                                </qv-inputgroup>
-                                <qv-inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <qv-labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </qv-labelinput>
-                                </qv-inputgroup>
-                            </fieldset>
-                            <fieldset><!--QV-VC Property purchase middle-->
-                                <qv-forminline><!--Radio Withdraw-->
-                                    <qv-radio>
-                                        <input type="radio" name="withdraw" value="Withdraw" checked>
-                                        <label for="withdraw">Withdraw</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="withdraw" value="Save">
-                                        <label for="save">Save to</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <qv-labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </qv-labelinput>
-                                </qv-inputgroup>
-                                <qv-forminline><!--Radio Monthly-->
-                                    <qv-radio>
-                                        <input type="radio" name="invest" value="Monthly" checked>
-                                        <label for="monthly">Monthly</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="invest" value="Annually">
-                                        <label for="annually">Annually</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-forminline><!--Radio Dividends-->
-                                    <qv-radio>
-                                        <label for="monthly">Dividends?</label>
-                                        <input type="radio" name="dividends" value="Yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <label for="monthly">Dividends?</label>
-                                        <input type="radio" name="dividends" value="Yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-equalthree>
-                                    <qv-selectwrap><!--Rate-->
-                                        <label for="rate">Rate</label>
-                                        <qv-ratepercentage>
-                                            <input type="text" name="rate">
-                                            <i>%</i>
-                                        </qv-ratepercentage>
-                                    </qv-selectwrap>
-                                    <qv-checkbox><!--Checkbox Reinvested-->
-                                        <input type="checkbox" name="income" value="Reinvested">
-                                        <label for="reinvested">Reinvested</label>
-                                    </qv-checkbox>
-                                    <qv-checkbox><!--Checkbox Withdrawn-->
-                                        <input type="checkbox" name="income" value="Withdrawn">
-                                        <label for="withdrawn">Withdrawn</label>
-                                    </qv-checkbox>
-                                </qv-equalthree>
-                            </fieldset>
-                        </qv-twoline>
-                    </qv-heading>
-                    <qv-formgroup><!--QV-VC save button-->
-                        <button type="submit" class="fill-blue">Save</button>
-                    </qv-formgroup>
+            <qv-form> <!--QV-VC form -->
+                <form><!--QV-VC form -->
+                    <h2>Investment Assets</h2>
+                    <hr>
+                    <form-threecolumn>
+                        <fieldset><!--QV-VC First Column-->
+                            <label for="country">Country</label>
+                            <selectright><!--Country-->
+                                <i>SPG</i>
+                                <select name="qv-select" id="select">
+                                    <option value="Singapore" selected>Singapore</option>
+                                    <option value="India">India</option>
+                                </select>
+                            </selectright>
+
+                            <forminline><!--Intitution-->
+                                <radio>
+                                    <input type="radio" name="shares" value="Institution" checked>
+                                    <label for="institution">Institution</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="shares" value="Shares">
+                                    <label for="shares">Shares</label>
+                                </radio>
+                            </forminline>
+
+                            <inputgroup><!--Identifier-->
+                                <label for="identifier">Identifier</label>
+                                <input type="text" name="identifier" required>
+                            </inputgroup>
+                        </fieldset>
+
+                        <fieldset><!--QV-VC Second Column-->
+                            <inputgroup><!--Amount-->
+                                <label for="amount">Amount</label>
+                                <labelinput>
+                                    <i>SGP</i>
+                                    <input type="text" name="amount">
+                                </labelinput>
+                            </inputgroup>
+
+                            <forminline><!--Radio Withdraw-->
+                                <radio>
+                                    <input type="radio" name="withdraw" value="Withdraw" checked>
+                                    <label for="withdraw">Withdraw</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="withdraw" value="Save">
+                                    <label for="save">Save to</label>
+                                </radio>
+                            </forminline>
+
+                            <forminline><!--Radio Monthly-->
+                                <radio>
+                                    <input type="radio" name="invest" value="Monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="invest" value="Annually">
+                                    <label for="annually">Annually</label>
+                                </radio>
+                            </forminline>
+
+                            <inputgroup><!--End Date-->
+                                <label for="retirement">End Date</label>
+                                <input type="date" name="end-date" value="2018-07-22"
+                                min="2000-01-01" max="2018-12-31">
+                            </inputgroup>
+                        </fieldset>
+
+                        <fieldset><!--QV-VC Third Column-->
+                            <selectwrap><!--Growth Rate-->
+                                <label for="grate">Growth Rate</label>
+                                <ratepercentage>
+                                    <input type="text" name="grate">
+                                    <i>%</i>
+                                </ratepercentage>
+                            </selectwrap>
+                            
+                            <checkbox><!--Checkbox dividends-->
+                                <input type="checkbox" name="dividends" value="dividends">
+                                <label for="dividends">Dividends</label>
+                            </checkbox>
+
+                            <forminline><!--Radio Withdraw-->
+                                <radio>
+                                    <input type="radio" name="reinvest" value="Reinvest" checked>
+                                    <label for="reinvest">Reinvest</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="withdraw" value="Withdraw">
+                                    <label for="withdraw">Withdraw</label>
+                                </radio>
+                            </forminline>
+
+                            <selectwrap><!--Rate-->
+                                <label for="rate">Rate</label>
+                                <ratepercentage>
+                                    <input type="text" name="rate">
+                                    <i>%</i>
+                                </ratepercentage>
+                            </selectwrap>
+                        </fieldset>
+                    </form-threecolumn>
                 </form>
-            </qv-cashform>
-            
+            </qv-form>
+
+            <qv-savebutton></qv-savebutton><!--Action Icons and Save Button-->
             <!--Add  qv-footer tag to add footer-->
         </section>
     </main>
+    <script type=module src="components/button.js"></script>
 </body>
 </html>

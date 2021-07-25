@@ -1,8 +1,17 @@
 /*QV-VC Footer*/
 article{
     @include quo-flex(flex, wrap, null, null, 60px);
+}
+/*QV-VC Save Button and Action icons*/
+qv-savebutton{
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    align-items: center;
     max-width: 1400px;
     margin: 50px auto 20px;
+    .fill-blue{
+        min-width: 180px;
+    }
 }
 figure {
     cursor: pointer;
@@ -10,6 +19,10 @@ figure {
     a{
         @include quo-flex(flex, wrap, null, center, 7px, column);
         position: relative;
+    }
+    h4{
+        text-transform: uppercase;
+        font-weight: 400;
     }
     &:first-child{
         margin-right: 65px;
