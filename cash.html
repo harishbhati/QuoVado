@@ -13,74 +13,75 @@
 <body>
     <!--Add  qv-header tag to add header-->
 
-    <main><!--Cash main -->
+    <main><!--main Block-->
         <!--Add  qv-sidebar tag to add sidebar-->
 
         <section> <!--Cash Content section -->
-            <qv-cashform> <!--Cash form -->
+            <qv-form> <!--QV-VC form -->
                 <form>
-                    <qv-heading>
-                        <h2>Cash Assets</h2>
-                        <hr>
-                        <qv-twoline>
-                            <fieldset>
-                                <label for="country">Country</label>
-                                <qv-selectright>
-                                    <i>SPG</i>
-                                    <select name="qv-select" id="select">
-                                        <option value="Singapore" selected>Singapore</option>
-                                        <option value="India">India</option>
-                                    </select>
-                                </qv-selectright>
+                    <h2>Cash Assets</h2>
+                    <hr>
+                    <form-twocolumn>
+                        <fieldset><!--First Column-->
+                            <label for="country">Country</label><!--Country Select-->
+                            <selectright>
+                                <i>SPG</i>
+                                <select name="qv-select" id="select">
+                                    <option value="Singapore" selected>Singapore</option>
+                                    <option value="India">India</option>
+                                </select>
+                            </selectright>
 
+                            <inputgroup><!--Bank Name-->
                                 <label for="bank">Bank Name</label>
                                 <input type="text" name="bank" required>
+                            </inputgroup>
 
+                            <inputgroup><!--Identifier-->
                                 <label for="identifier">Identifier</label>
                                 <input type="text" name="identifier" required>
-                            </fieldset>
-                            <fieldset>
-                                <qv-radio>
-                                    <input type="radio" name="saving" value="Saving" checked>
-                                    <label for="saving">SAVING</label>
-                                </qv-radio>
-                                <qv-radio>
-                                    <input type="radio" name="saving" value="Checking">
-                                    <label for="checking">CHECKING</label>
-                                </qv-radio>
-                                <qv-formright>
-                                    <qv-selectwrap>
-                                        <label for="amount">Amount</label>
-                                        <qv-selectleft>
-                                            <select name="qv-select" id="select">
-                                                <option value="SPG" selected>SPG</option>
-                                                <option value="CHK">CHK</option>
-                                            </select>
-                                            <input type="text" name="amount">
-                                        </qv-selectleft>
-                                    </qv-selectwrap>
-                                    <qv-selectwrap>
-                                        <label for="rate">Rate</label>
-                                        <qv-rate>
-                                            <input type="text" name="rate">
-                                            <i>%</i>
-                                        </qv-rate>
-                                    </qv-selectwrap>
-                                </qv-formright>
-                            </fieldset>
-                        </qv-twoline>
-                    </qv-heading>
-                    <qv-formgroup>
-                        <button type="submit" class="fill-blue">Save</button>
-                    </qv-formgroup>
+                            </inputgroup>
+                        </fieldset>
+                        <fieldset><!--Second Column-->
+                            <radio><!--Saving Radio-->
+                                <input type="radio" name="saving" value="Saving" checked>
+                                <label for="saving">SAVING</label>
+                            </radio>
+                            <radio><!--Checking Radio-->
+                                <input type="radio" name="saving" value="Checking">
+                                <label for="checking">CHECKING</label>
+                            </radio>
+                            <input-twocolumn>
+                                <selectwrap><!--Amount Select-->
+                                    <label for="amount">Amount</label>
+                                    <selectleft>
+                                        <select name="qv-select" id="select">
+                                            <option value="SPG" selected>SPG</option>
+                                            <option value="CHK">CHK</option>
+                                        </select>
+                                        <input type="text" name="amount">
+                                    </selectleft>
+                                </selectwrap>
+                                <selectwrap><!--Rate Select-->
+                                    <label for="rate">Rate</label>
+                                    <rate>
+                                        <input type="text" name="rate">
+                                        <i>%</i>
+                                    </rate>
+                                </selectwrap>
+                            </input-twocolumn>
+                        </fieldset>
+                    </form-twocolumn>
                 </form>
-            </qv-cashform>
-            
+            </qv-form>
+
+            <qv-savebutton></qv-savebutton><!--Action Icons and Save Button-->
             <!--Add  qv-footer tag to add footer-->
         </section>
     </main>
     <script type=module src="components/header.js"></script>
     <script type=module src="components/sidebar.js"></script>
+    <script type=module src="components/button.js"></script>
     <script type=module src="components/footer.js"></script>
 </body>
 </html>

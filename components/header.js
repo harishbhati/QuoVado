@@ -1,7 +1,7 @@
 class QvHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `          
-            <header><!--QV-LC Header -->
+            <header><!--QV-VC Header -->
                 <img src="images/quovado.png" alt="QuoVado">
             </header>
         `

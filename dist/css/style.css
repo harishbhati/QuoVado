@@ -36,10 +36,10 @@ body {
 
 button {
   cursor: pointer;
-  font: inherit;
+  font: 400 14px/1.5 "Roboto", sans-serif;
   outline: 0;
   border: 1px solid #404040;
-  padding: 10px 20px;
+  padding: 5px 20px;
   min-width: 115px;
   border-radius: 5px;
   text-align: center;

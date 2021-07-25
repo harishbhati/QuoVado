@@ -17,156 +17,169 @@
         <!--Add  qv-sidebar tag to add sidebar-->
 
         <section> <!--QV-VC Content section -->
-            <qv-cashform> <!--QV-VC form -->
+            <qv-form> <!--QV-VC form -->
                 <form>
-                    <qv-heading>
-                        <h2>Property Assets</h2>
-                        <hr>
-                        <qv-twoline><!--QV-VC first column-->
-                            <fieldset><!--QV-VC propert first column-->
-                                <label for="country">Country</label><!--Country-->
-                                <qv-selectright>
-                                    <i>SPG</i>
-                                    <select name="qv-select" id="select">
-                                        <option value="Singapore" selected>Singapore</option>
-                                        <option value="India">India</option>
-                                    </select>
-                                </qv-selectright>
-
-                                <label for="identifier">Identifier</label><!--Identifier-->
-                                <input type="text" name="identifier" required>
-
+                    <h2>Property Assets</h2>
+                    <hr>
+                    <form-fourcolumn>
+                        <fieldset><!--QV-VC First Column-->
+                            <radiowrap><!--Type of property Radio-->
                                 <label for="identifier">Type of Property</label>
-                                <qv-forminline><!--Type of property Radio-->
-                                    <qv-radio>
-                                        <input type="radio" name="residential" value="property" checked>
-                                        <label for="residential">Residential</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="home" value="property">
-                                        <label for="home">2nd Home</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="investment" value="property">
-                                        <label for="investment">Investment</label>
-                                    </qv-radio>
-                                    <qv-radio>
-                                        <input type="radio" name="commercial" value="property">
-                                        <label for="commercial">Commercial</label>
-                                    </qv-radio>
-                                </qv-forminline>
-                                <qv-forminline>
-                                    <qv-checkbox><!--Checkbox Income-->
-                                        <input type="checkbox" name="income" value="income">
-                                        <label for="income">Lease Income</label>
-                                    </qv-checkbox>
-                                    <qv-inputgroup><!--Amount-->
-                                        <label for="country">Amount</label>
-                                        <qv-labelinput>
-                                            <i>SGP</i>
-                                            <input type="text" name="amount">
-                                        </qv-labelinput>
-                                    </qv-inputgroup>
-                                </qv-forminline>
-                            </fieldset>
-                            <fieldset><!--QV-VC Property purchase middle-->
-                                <qv-forminline>
-                                    <qv-selectwrap><!--Purchase Price-->
-                                        <label for="amount">Purchase Price</label>
-                                        <qv-selectleft>
-                                            <select name="qv-select" id="select">
-                                                <option value="SPG" selected>SPG</option>
-                                                <option value="CHK">CHK</option>
-                                            </select>
-                                            <input type="text" name="amount">
-                                        </qv-selectleft>
-                                    </qv-selectwrap>
-                                    <qv-radiowrap><!--Radio Mortgage-->
-                                        <label for="mortgage">Mortgage</label>
-                                        <qv-radio>
-                                            <input type="radio" name="mortgage" value="Yes" checked>
-                                            <label for="yes">Yes</label>
-                                        </qv-radio>
-                                        <qv-radio>
-                                            <input type="radio" name="mortgage" value="No">
-                                            <label for="no">No</label>
-                                        </qv-radio>
-                                    </qv-radiowrap>
-                                </qv-forminline>
-                                <qv-inlinethree>
-                                    <qv-selectwrap><!--Amount-->
-                                        <label for="amount">Amount</label>
-                                        <qv-labelinput>
-                                            <i>SGP</i>
-                                            <input type="text" name="amount">
-                                        </qv-labelinput>
-                                    </qv-selectwrap>
-                                    <qv-inputgroup><!--Term-->
-                                        <label for="term">Term</label>
-                                        <input type="text" name="term" required>
-                                    </qv-inputgroup>
-                                    <qv-selectwrap><!--Intrest Rate-->
-                                        <label for="rate">Intrest Rate</label>
-                                        <qv-ratepercentage>
-                                            <input type="text" name="rate">
-                                            <i>%</i>
-                                        </qv-ratepercentage>
-                                    </qv-selectwrap>
-                                </qv-inlinethree>
-                                <qv-forminline>
-                                    <qv-selectwrap><!--Current Price-->
-                                        <label for="currentPrice">Current Price</label>
-                                        <qv-selectleft>
-                                            <select name="qv-select" id="select">
-                                                <option value="SPG" selected>SPG</option>
-                                                <option value="CHK">CHK</option>
-                                            </select>
-                                            <input type="text" name="amount">
-                                        </qv-selectleft>
-                                    </qv-selectwrap>
-                                    <qv-radiowrap><!--Radio Mortgage 2-->
-                                        <label for="mortgage">Mortgage</label>
-                                        <qv-radio>
-                                            <input type="radio" name="mortgage" value="Yes" checked>
-                                            <label for="yes">Yes</label>
-                                        </qv-radio>
-                                        <qv-radio>
-                                            <input type="radio" name="mortgage" value="No">
-                                            <label for="no">No</label>
-                                        </qv-radio>
-                                    </qv-radiowrap>
-                                </qv-forminline>
-                                <qv-inlinethree>
-                                    <qv-selectwrap>
-                                        <label for="amount">Amount</label>
-                                        <qv-labelinput>
-                                            <i>SGP</i>
-                                            <input type="text" name="amount">
-                                        </qv-labelinput>
-                                    </qv-selectwrap>
-                                    <qv-inputgroup>
-                                        <label for="term">Term</label>
-                                        <input type="text" name="term" required>
-                                    </qv-inputgroup>
-                                    <qv-selectwrap>
-                                        <label for="rate">Intrest Rate</label>
-                                        <qv-ratepercentage>
-                                            <input type="text" name="rate">
-                                            <i>%</i>
-                                        </qv-ratepercentage>
-                                    </qv-selectwrap>
-                                </qv-inlinethree>
-                            </fieldset>
-                        </qv-twoline>
-                    </qv-heading>
-                    <qv-formgroup><!--QV-VC save button-->
-                        <button type="submit" class="fill-blue">Save</button>
-                    </qv-formgroup>
+                                <radio>
+                                    <input type="radio" name="residential" value="property" checked>
+                                    <label for="residential">Residential</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="home" value="property">
+                                    <label for="home">2nd Home</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="investment" value="property">
+                                    <label for="investment">Investment</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="commercial" value="property">
+                                    <label for="commercial">Commercial</label>
+                                </radio>
+                            </radiowrap>
+                        </fieldset>
+                        <fieldset><!--QV-VC Second Column-->
+                            <label for="country">Country</label><!--Country-->
+                            <selectright>
+                                <i>SPG</i>
+                                <select name="qv-select" id="select">
+                                    <option value="Singapore" selected>Singapore</option>
+                                    <option value="India">India</option>
+                                </select>
+                            </selectright>
+
+                            <inputgroup><!--Identifier-->
+                                <label for="identifier">Identifier</label>
+                                <input type="text" name="identifier" required>
+                            </inputgroup>
+                            
+                            <inputgroup><!--Date Of Purchase-->
+                                <label for="retirement">Date Of Purchase</label>
+                                <input type="date" name="retirement-age" value="2018-07-22"
+                                min="2000-01-01" max="2018-12-31">
+                            </inputgroup>
+                        </fieldset>
+                        <fieldset><!--QV-VC Third Column-->
+                            <selectwrap><!--Purchase Price-->
+                                <label for="amount">Purchase Price</label>
+                                <selectleft>
+                                    <select name="qv-select" id="select">
+                                        <option value="SPG" selected>SPG</option>
+                                        <option value="CHK">CHK</option>
+                                    </select>
+                                    <input type="text" name="amount">
+                                </selectleft>
+                            </selectwrap>
+                            <radioinline><!--Radio Mortgage-->
+                                <label for="mortgage">Mortgage</label>
+                                <radio>
+                                    <input type="radio" name="mortgage" value="Yes" checked>
+                                    <label for="yes">Yes</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="mortgage" value="No">
+                                    <label for="no">No</label>
+                                </radio>
+                            </radioinline>
+
+                            <input-twocolumn>
+                                <selectwrap><!--Amount Select-->
+                                    <label for="amount">Amount</label>
+                                    <labelinput>
+                                        <i>SGP</i>
+                                        <input type="text" name="amount">
+                                    </labelinput>
+                                </selectwrap>
+                                <selectwrap><!--Rate Select-->
+                                    <label for="rate">Rate</label>
+                                    <rate>
+                                        <input type="text" name="rate">
+                                        <i>%</i>
+                                    </rate>
+                                </selectwrap>
+                            </input-twocolumn>
+
+                            <radioinline><!--Radio Frequency-->
+                                <label for="mortgage">Frequency</label>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Annually">
+                                    <label for="annually">Annually</label>
+                                </radio>
+                            </radioinline>
+                        </fieldset>
+
+                        <fieldset><!--QV-VC Fourth Column-->
+                            <selectwrap><!--Current Price-->
+                                <label for="amount">Current Price</label>
+                                <selectleft>
+                                    <select name="qv-select" id="select">
+                                        <option value="SPG" selected>SPG</option>
+                                        <option value="CHK">CHK</option>
+                                    </select>
+                                    <input type="text" name="amount">
+                                </selectleft>
+                            </selectwrap>
+
+                            <radioinline><!--Radio Mortgage-->
+                                <label for="mortgage">Mortgage</label>
+                                <radio>
+                                    <input type="radio" name="mortgage" value="Yes" checked>
+                                    <label for="yes">Yes</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="mortgage" value="No">
+                                    <label for="no">No</label>
+                                </radio>
+                            </radioinline>
+
+                            
+                            <input-twocolumn>
+                                <selectwrap><!--Amount Select-->
+                                    <label for="amount">Amount</label>
+                                    <labelinput>
+                                        <i>SGP</i>
+                                        <input type="text" name="amount">
+                                    </labelinput>
+                                </selectwrap>
+                                <selectwrap><!--Rate Select-->
+                                    <label for="rate">Rate</label>
+                                    <rate>
+                                        <input type="text" name="rate">
+                                        <i>%</i>
+                                    </rate>
+                                </selectwrap>
+                            </input-twocolumn>
+                            
+                            <radioinline><!--Radio Frequency-->
+                                <label for="mortgage">Frequency</label>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Annually">
+                                    <label for="annually">Annually</label>
+                                </radio>
+                            </radioinline>
+                        </fieldset>
+                    </form-fourcolumn>
                 </form>
-            </qv-cashform>
+            </qv-form>
             
+            <qv-savebutton></qv-savebutton><!--Action Icons and Save Button-->
+
             <!--Add  qv-footer tag to add footer-->
         </section>
     </main>
+    <script type=module src="components/button.js"></script>
 </body>
 </html>
