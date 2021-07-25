@@ -1,7 +1,7 @@
 /*QV-VC Form*/
 qv-cashform{
     display: block;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     h2{
         text-align: center;
@@ -102,6 +102,11 @@ fieldset {
 qv-twoline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+qv-threecolumn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
 qv-forminline {

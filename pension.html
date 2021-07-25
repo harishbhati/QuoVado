@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QyoVado Creator">
+    <meta name="author" content="QyoVado">
+    <title>QyoVado - Pension</title>
+    <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
+    <link href="dist/css/pension.css" rel='stylesheet' type='text/css' media='all'>
+</head>
+<body>
+    <!--Add  qv-header tag to add header-->
+    
+    <main><!--QV-VC main -->
+        <!--Add  qv-sidebar tag to add sidebar-->
+
+        <section> <!--QV-VC Content section -->
+            <qv-cashform> <!--QV-VC form -->
+                <form>
+                    <qv-heading>
+                        <h2>Pension Assets</h2>
+                        <hr>
+                        <qv-optionfour>
+                            <qv-checkbox><!--Checkbox Private-->
+                                <input type="checkbox" name="private" value="Private">
+                                <label for="private">Private</label>
+                            </qv-checkbox>
+                            <qv-checkbox><!--Checkbox Company-->
+                                <input type="checkbox" name="company" value="Company">
+                                <label for="company">Company</label>
+                            </qv-checkbox>
+                            <qv-checkbox><!--Checkbox Annuities-->
+                                <input type="checkbox" name="annuities" value="Annuities">
+                                <label for="annuities">Annuities</label>
+                            </qv-checkbox>
+                            <qv-checkbox><!--Checkbox State-->
+                                <input type="checkbox" name="state" value="State">
+                                <label for="state">State</label>
+                            </qv-checkbox>
+                        </qv-optionfour>
+                        <qv-threecolumn>
+                            <fieldset>
+                                <label for="country">Country</label><!--Country-->
+                                <qv-selectright>
+                                    <i>SPG</i>
+                                    <select name="qv-select" id="select">
+                                        <option value="Singapore" selected>Singapore</option>
+                                        <option value="India">India</option>
+                                    </select>
+                                </qv-selectright>
+
+                                <label for="company">Company Name</label><!--Company Name-->
+                                <input type="text" name="company" required>
+
+                                <qv-inputgroup><!--Identifier Select Box-->
+                                    <label for="identifier">Identifier</label>
+                                    <select name="qv-select" id="select">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="Value1">Value1</option>
+                                        <option value="Value2">Value2</option>
+                                    </select>
+                                </qv-inputgroup>
+
+                                <qv-inputgroup><!--Organization Select Box-->
+                                    <label for="organization">Organization</label>
+                                    <select name="qv-select" id="select">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="Value1">Value1</option>
+                                        <option value="Value2">Value2</option>
+                                    </select>
+                                </qv-inputgroup>
+                            </fieldset>
+                            <fieldset>
+                                <qv-forminline>
+                                    <qv-selectwrap>
+                                        <label for="sp-value">Value</label><!--Value Select Box-->
+                                        <qv-selectright>
+                                            <i>SPG</i>
+                                            <select name="qv-select" id="select">
+                                                <option value="35,00" selected>35,00</option>
+                                                <option value="40,000">40,000</option>
+                                            </select>
+                                        </qv-selectright>
+                                    </qv-selectwrap>
+                                    <qv-selectwrap><!--Growth Rate-->
+                                        <label for="grate">Growth Rate</label>
+                                        <qv-rate>
+                                            <input type="text" name="grate">
+                                            <i>%</i>
+                                        </qv-rate>
+                                    </qv-selectwrap>
+                                </qv-forminline>
+                                
+                                <qv-inputgroup><!--Age Access Select Box-->
+                                    <label for="age">Age Access</label>
+                                    <select name="qv-select" id="select">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="60">60</option>
+                                        <option value="70">70</option>
+                                    </select>
+                                </qv-inputgroup>
+                                <qv-forminline>
+                                    <!--Radio Withdraw Form-->
+                                    <qv-radio>
+                                       <input type="radio" name="withdraw" value="Withdraw" checked>
+                                       <label for="withdraw">Withdraw Form</label>
+                                    </qv-radio>
+                                    <qv-radio>
+                                       <input type="radio" name="continue" value="Continue">
+                                       <label for="continue">Continue To</label>
+                                    </qv-radio>
+                                 </qv-forminline>
+
+                                 <qv-forminline>
+                                    <qv-selectwrap>
+                                        <label for="pamount">Amount</label><!--Amount Select Box-->
+                                        <qv-selectright>
+                                            <i>SPG</i>
+                                            <select name="qv-select" id="select">
+                                                <option value="35,00" selected>35,00</option>
+                                                <option value="40,000">40,000</option>
+                                            </select>
+                                        </qv-selectright>
+                                    </qv-selectwrap>
+                                    <qv-radio><!--Frequency Radio-->
+                                        <input type="radio" name="frequency" value="Frequency" checked>
+                                        <label for="frequency">Frequency</label>
+                                     </qv-radio>
+                                 </qv-forminline>
+                            </fieldset>
+                            <fieldset>
+                                <qv-radio> <!--Lump Sum Radio-->
+                                    <label for="monthly">Lump Sum</label>
+                                    <input type="radio" name="lump" value="Yes" checked>
+                                    <label for="yes">Yes</label>
+
+                                    <input type="radio" name="no" value="No">
+                                    <label for="no">No</label>
+                                </qv-radio>
+                                <qv-inputgroup><!--QV Score Select Box-->
+                                    <label for="score">QV Score</label>
+                                    <select name="qv-select" id="select">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="Value1">Value1</option>
+                                        <option value="Value2">Value2</option>
+                                    </select>
+                                </qv-inputgroup>
+                            </fieldset>
+                        </qv-threecolumn>
+                    </qv-heading>
+                    <qv-formgroup>
+                        <button type="submit" class="fill-blue">Save</button>
+                    </qv-formgroup>
+                </form>
+            </qv-cashform>
+            
+            <!--Add  qv-footer tag to add footer-->
+        </section>
+    </main>
+</body>
+</html>

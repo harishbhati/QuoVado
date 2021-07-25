@@ -112,6 +112,10 @@ qv-radio, qv-checkbox {
   color: #666;
 }
 
+[type=checkbox]:checked + label {
+  color: #1f0488;
+}
+
 [type=radio]:checked + label:before,
 [type=radio]:not(:checked) + label:before,
 [type=checkbox]:checked + label:before,

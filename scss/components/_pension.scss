@@ -1,0 +1,20 @@
+qv-threecolumn{
+    fieldset:last-child{
+        qv-radio{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}
+qv-optionfour {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 60px;
+}
+qv-checkbox{
+    label{
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+}
