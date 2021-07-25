@@ -45,6 +45,9 @@ qv-radio,qv-checkbox{
     display: inline-block;
     color: #666;
 }
+[type="checkbox"]:checked + label{
+color: $blue;
+}
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before,
