@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="QyoVado Creator">
     <meta name="author" content="QyoVado">
-    <title>QyoVado - Pension</title>
+    <title>QyoVado - Pension Annuities</title>
     <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
-    <link href="dist/css/pension.css" rel='stylesheet' type='text/css' media='all'>
+    <link href="dist/css/pensionall.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
     <!--Add  qv-header tag to add header-->
@@ -19,8 +19,30 @@
         <section> <!--QV-VC Content section -->
             <qv-form> <!--QV-VC form -->
                 <form>
-                    <h2>Pension Assets</h2>
+                    <h2>Pension Assets - Annuities</h2>
                     <hr>
+                    <optionfour><!--Pension Option-->
+                        <radio><!--Radio Company-->
+                            <input type="radio" name="company" value="Company">
+                            <label for="company">Company</label>
+                        </radio>
+
+                        <radio><!--Radio State-->
+                            <input type="radio" name="state" value="State">
+                            <label for="state">State</label>
+                        </radio>
+
+                        <radio><!--Radio Annuities-->
+                            <input type="radio" name="annuities" value="Annuities" checked>
+                            <label for="annuities">Annuities</label>
+                        </radio>
+
+                        <radio><!--Radio Private-->
+                            <input type="radio" name="private" value="Private">
+                            <label for="private">Private</label>
+                        </radio>
+                    </optionfour>
+
                     <form-threecolumn>
                         <fieldset>
                             <label for="country">Country</label><!--Country-->
@@ -100,6 +122,31 @@
                                 <radio>
                                     <input type="radio" name="index" value="No">
                                     <label for="no">No</label>
+                                </radio>
+                            </radioinline>
+
+                            <input-twocolumn><!--Amount Select-->
+                                <selectwrap>
+                                    <label for="amount">Amount</label>
+                                    <selectleft>
+                                        <select name="qv-select" id="select">
+                                            <option value="SPG" selected>SPG</option>
+                                            <option value="CHK">CHK</option>
+                                        </select>
+                                        <input type="text" name="amount">
+                                    </selectleft>
+                                </selectwrap>
+                            </input-twocolumn>
+
+                            <radioinline><!--Radio Frequency-->
+                                <label for="frequency">Frequency</label>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="lumpsum" value="Annually">
+                                    <label for="annually">Annually</label>
                                 </radio>
                             </radioinline>
                         </fieldset>

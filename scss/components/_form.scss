@@ -95,7 +95,7 @@ rate{
 fieldset {
     display: block;
 }
-/*Form Columna*/
+/*Form Columns*/
 form-twocolumn{
     display: grid;
     grid-template-columns: repeat(2, minmax(325px,25%));
@@ -119,11 +119,6 @@ input-twocolumn{
     grid-template-columns: 65% 35%;
     gap: 8px;
 }
-qv-twoline {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-}
 radioinline{
     display: flex;
     flex-wrap: wrap;
@@ -134,16 +129,6 @@ forminline {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-qv-inlinethree {
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    gap: 10px;
-}
-qv-equalthree {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
 ratepercentage{
     display: flex;
     align-items: center;
@@ -151,4 +136,13 @@ ratepercentage{
         padding-left: 10px;
         margin-bottom: 15px;
     }
+}
+
+/*Four Radio in a line*/
+optionfour{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto 30px;
 }
