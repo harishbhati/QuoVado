@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="QyoVado Creator">
     <meta name="author" content="QyoVado">
-    <title>QyoVado - Pension</title>
+    <title>QyoVado - Pension State</title>
     <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
-    <link href="dist/css/pension.css" rel='stylesheet' type='text/css' media='all'>
+    <link href="dist/css/pensionall.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
     <!--Add  qv-header tag to add header-->
@@ -19,10 +19,31 @@
         <section> <!--QV-VC Content section -->
             <qv-form> <!--QV-VC form -->
                 <form>
-                    <h2>Pension Assets</h2>
+                    <h2>Pension Assets - State</h2>
                     <hr>
-                    <form-threecolumn>
-                        <fieldset>
+                    <optionfour><!--Pension Option-->
+                        <radio><!--Radio Company-->
+                            <input type="radio" name="company" value="Company">
+                            <label for="company">Company</label>
+                        </radio>
+
+                        <radio><!--Radio State-->
+                            <input type="radio" name="state" value="State" checked>
+                            <label for="state">State</label>
+                        </radio>
+
+                        <radio><!--Radio Annuities-->
+                            <input type="radio" name="annuities" value="Annuities">
+                            <label for="annuities">Annuities</label>
+                        </radio>
+
+                        <radio><!--Radio Private-->
+                            <input type="radio" name="private" value="Private">
+                            <label for="private">Private</label>
+                        </radio>
+                    </optionfour>
+                    <form-twocolumn>
+                        <fieldset><!--QV-VC Firts Column-->
                             <label for="country">Country</label><!--Country-->
                             <selectright>
                                 <i>SPG</i>
@@ -31,50 +52,6 @@
                                     <option value="India">India</option>
                                 </select>
                             </selectright>
-
-                            <inputgroup><!--Company Name-->
-                                <label for="company">Company Name</label>
-                                <input type="text" name="company" required>
-                            </inputgroup>
-
-                            <inputgroup><!--Organization Select Box-->
-                                <label for="organization">Organization</label>
-                                <select name="qv-select" id="select">
-                                    <option value="Select" selected>Select</option>
-                                    <option value="Value1">Value1</option>
-                                    <option value="Value2">Value2</option>
-                                </select>
-                            </inputgroup>
-                        </fieldset>
-
-                        <fieldset>
-                            <inputgroup><!--Identifier Select Box-->
-                                <label for="identifier">Identifier</label>
-                                <select name="qv-select" id="select">
-                                    <option value="Select" selected>Select</option>
-                                    <option value="Value1">Value1</option>
-                                    <option value="Value2">Value2</option>
-                                </select>
-                            </inputgroup>
-
-                            <input-twocolumn><!--Age Expected-->
-                                <inputgroup>
-                                    <label for="age">Age Expected</label>
-                                    <input type="text" name="age" required>
-                                </inputgroup>
-                            </input-twocolumn>
-
-                            <radioinline><!--Radio Lump Sum-->
-                                <label for="lumpsum">Lump Sum</label>
-                                <radio>
-                                    <input type="radio" name="lumpsum" value="Yes" checked>
-                                    <label for="yes">Yes</label>
-                                </radio>
-                                <radio>
-                                    <input type="radio" name="lumpsum" value="No">
-                                    <label for="no">No</label>
-                                </radio>
-                            </radioinline>
 
                             <input-twocolumn><!--Amount Select-->
                                 <selectwrap>
@@ -88,9 +65,21 @@
                                     </selectleft>
                                 </selectwrap>
                             </input-twocolumn>
+
+                            <radioinline><!--Radio Frequency-->
+                                <label for="frequency">Frequency</label>
+                                <radio>
+                                    <input type="radio" name="frequency" value="Monthly" checked>
+                                    <label for="monthly">Monthly</label>
+                                </radio>
+                                <radio>
+                                    <input type="radio" name="lumpsum" value="Annually">
+                                    <label for="annually">Annually</label>
+                                </radio>
+                            </radioinline>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset><!--QV-VC Two Column-->
                             <radioinline><!--Radio Index Linked-->
                                 <label for="index">Index Linked</label>
                                 <radio>
@@ -102,8 +91,16 @@
                                     <label for="no">No</label>
                                 </radio>
                             </radioinline>
+                            
+                            <inputgroup><!--Age Received Selectbox-->
+                                <label for="age">Age Received</label>
+                                <select name="qv-select" id="select">
+                                    <option value="Select" selected>Select</option>
+                                    <option value="Select_1">Select 1</option>
+                                </select>
+                            </inputgroup>
                         </fieldset>
-                    </form-threecolumn>
+                    </form-twocolumn>
                 </form>
             </qv-form>
             
