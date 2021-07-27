@@ -327,61 +327,21 @@ select {
   cursor: pointer;
 }
 
-.profile {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -209px -72px;
-}
-
-.cash {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -77px -121px;
-}
-
-.property {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -13px -180px;
-}
-
-.investment {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -141px -121px;
-}
-
-.pension {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -209px -72px;
-}
-
-.business {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -13px -121px;
-}
-
-.msc {
-  width: 38px;
-  height: 33px;
-  background: url("../../images/icons_sprites.png") -209px -13px;
-}
-
 /*Cash footer*/
 footer {
   display: block;
 }
 footer p {
-  margin-top: 20px;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 400;
 }
-footer nav {
+footer nav ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-footer nav a {
+footer nav ul a {
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -412,6 +372,11 @@ footer nav a {
 
 .biscuit {
   color: #d2a091;
+}
+
+svg {
+  width: 60px;
+  height: 60px;
 }
 
 /*QV-VC Form*/
@@ -576,11 +541,11 @@ optionfour {
 }
 
 /*QV-VC Main*/
-main {
+qv-main {
   display: flex;
   height: calc(100% - 77px);
 }
-main > section {
+qv-main > section {
   padding: 30px;
   margin-inline: auto;
   flex: 0 0 calc(100% - 200px);

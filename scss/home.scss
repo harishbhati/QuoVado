@@ -1,0 +1,18 @@
+@import  "../scss/base/variables";
+@import  "../scss/base/reset";
+@import  "../scss/base/mixins";
+@import  "../scss/components/input";
+@import  "../scss/components/button";
+@import "../scss/components/header/qv-vc-header";
+@import "../scss/components/sidebar/qv-vc-aside";
+@import "../scss/components/footer/qv-vc-footer";
+@import "../scss/components/main/qv-vc-main";
+/*Center Add form icon*/
+qv-addform{
+    height: calc(100% - 351px);
+    display: grid;
+    place-items: center;
+    a{
+        cursor: pointer;
+    }
+}
