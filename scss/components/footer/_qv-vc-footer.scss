@@ -43,48 +43,15 @@ select{
     background: url('../../images/down-arrow.png') no-repeat right 10px center/10px;
     cursor: pointer;
 }
-.profile{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -209px -72px;
-}
-.cash{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -77px -121px;
-}
-.property{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -13px -180px;
-}
-.investment{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -141px -121px;
-}
-.pension{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -209px -72px;
-}
-.business{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -13px -121px;
-}
-.msc{
-    width: 38px;
-    height: 33px;
-    background: url('../../images/icons_sprites.png') -209px -13px;
-}
 /*Cash footer*/
 footer{
     display: block;
     p{
-        margin-top: 20px;
+        margin-top: 16px;
+        font-size: 13px;
+        font-weight: 400;
     }
-    nav{
+    nav ul{
         @include quo-flex(flex, wrap, space-between);
         a{
             text-transform: uppercase;
@@ -112,4 +79,8 @@ footer{
 }
 .biscuit{
     color:$biscuit;
+}
+svg {
+    width: 60px;
+    height: 60px;
 }
