@@ -1,11 +1,12 @@
 /*QV-VC Footer*/
 article{
-    @include quo-flex(flex, wrap, null, null, 60px);
+    @include quo-flex(flex, wrap, null, null, 40px);
 }
 /*QV-VC Save Button and Action icons*/
-qv-savebutton{
+qv-iconsvc{
     display: grid;
     grid-template-columns: 1fr 25%;
+    gap:50px;
     align-items: center;
     max-width: 1400px;
     margin: 50px auto 20px;
@@ -24,16 +25,44 @@ figure {
         text-transform: uppercase;
         font-weight: 400;
     }
-    &:first-child{
-        margin-right: 65px;
-        a::after{
+    &:nth-child(1){
+        stroke: $violet;
+        fill: rgba(31, 14, 136, 0.5);
+        margin-right: auto;
+        display: flex;
+        gap: 130px;
+        
+        &::after{
             content: '';
             background: $border-color;
-            width:2px;
+            width: 2px;
             height: 80%;
-            position: absolute;
-            right: -55px;
+            display: inline-block;
         }
+    }
+    &:nth-child(2){
+        stroke: $teal;
+        fill: rgba(22, 154, 154, 0.2);
+    }
+    &:nth-child(3){
+        stroke: $brown;
+        fill: rgba(208, 85, 102, 0.2);
+    }
+    &:nth-child(4){
+        stroke: $green;
+        fill: rgba(29, 119, 29, 0.2);
+    }
+    &:nth-child(5){
+        stroke: $yellow;
+        fill: rgba(230, 201, 44, 0.2);
+    }
+    &:nth-child(6){
+        stroke: $black;
+        fill: rgba(38, 38, 38, 0.2);
+    }
+    &:nth-child(7){
+        stroke: $biscuit;
+        fill: rgba(204, 85, 24, 0.2);
     }
     i{
         display: block;
@@ -44,6 +73,9 @@ select{
     cursor: pointer;
 }
 /*Cash footer*/
+qv-interviewvc{
+    display: block;
+}
 footer{
     display: block;
     p{
@@ -83,4 +115,9 @@ footer{
 svg {
     width: 60px;
     height: 60px;
+}
+.icon__active{
+    svg{
+        stroke-width: 4px;
+    }
 }

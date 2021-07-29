@@ -3,9 +3,9 @@ class QVSaveButton extends HTMLElement{
         this.innerHTML = `
         <article> <!--QV-VC Icon & Save Button -->
             <figure>
-                <a href="/" class="active">
+                <a href="profile.html" class="icon__active">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#profile" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="violet">Profile</h4>
                 </a>
@@ -13,7 +13,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="cash.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#cash" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="teal">Cash</h4>
                 </a>
@@ -21,7 +21,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="property.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#property" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="brown">Property</h4>
                 </a>
@@ -29,7 +29,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="investment.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#investment" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="green">Investment</h4>
                 </a>
@@ -37,7 +37,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="pension.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#pension" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="yellow">Pension</h4>
                 </a>
@@ -45,7 +45,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="business.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#business" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="black">Business</h4>
                 </a>
@@ -53,7 +53,7 @@ class QVSaveButton extends HTMLElement{
             <figure>
                 <a href="miscellaneous.html">
                     <svg>
-                        <use xlink:href="./icons/icons.svg#misc" />
+                        <use xlink:href="./icons/icons.svg#hexagone" />
                     </svg>
                     <h4 class="biscuit">Msc</h4>
                 </a>
@@ -67,16 +67,4 @@ class QVSaveButton extends HTMLElement{
     }
 } 
 
-customElements.define('qv-savebutton', QVSaveButton);
-
-// Add active class on footer nav
-// var navLinks = document.querySelectorAll("figure a");
-// var i = 0;
-// navLinks[i].addEventListener("click", function(e) {
-//     e.preventDefault();
-//     for (var i = 0; i < navLinks.length; i++) {
-//         console.log(navLinks[i]);
-//         navLinks[i].classList.remove('active');
-//     }
-//     this.classList.add('active');
-// }); 
+customElements.define('qv-iconsvc', QVSaveButton);

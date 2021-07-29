@@ -1,0 +1,61 @@
+@import  "../scss/base/variables";
+@import  "../scss/base/reset";
+@import  "../scss/base/mixins";
+@import  "../scss/components/input";
+@import  "../scss/components/button";
+@import  "../scss/components/form";
+@import "../scss/components/header/qv-vc-header";
+@import "../scss/components/sidebar/qv-vc-aside";
+@import "../scss/components/footer/qv-vc-footer";
+@import "../scss/components/main/qv-vc-main";
+
+qv-profiletab {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    a{
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 27px 15px;
+        color: $blue;
+        border: 1px solid $border-color;
+        border-bottom: none;
+        text-align: center;
+        &.current__tab{
+            color: $white;
+            background: $blue;
+        }
+        &:last-child{
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}
+
+radiowrap{
+    radio{
+        display: block;
+        margin: 0 0 10px;
+    }
+}
+/*two column one tab second form*/
+qv-formsvc{
+    max-width: 1440px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 200px;
+}
+form{
+    padding-top: 25px;
+}
+/*profile tab*/
+.tab-content{
+    display: none;
+    gap: 50px;
+    grid-template-columns: repeat(2,30%);
+    &.current__tab{
+        display: grid;
+    }
+}

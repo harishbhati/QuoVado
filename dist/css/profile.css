@@ -186,6 +186,168 @@ button {
   border-color: #1f0488;
 }
 
+/*QV-VC Form*/
+qv-formsvc {
+  display: block;
+  max-width: 1300px;
+  margin: auto;
+  height: calc(100% - 351px);
+}
+qv-formsvc h2 {
+  text-align: center;
+}
+qv-formsvc form {
+  display: block;
+}
+qv-formsvc form input, qv-formsvc form select {
+  margin-bottom: 15px;
+}
+qv-formsvc form button {
+  width: 100%;
+}
+
+selectleft {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+selectleft input[type=text] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+selectleft select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+selectright {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+selectright i {
+  background: #fcfcfc;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+selectright select {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+labelinput {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+labelinput i {
+  background: #fcfcfc;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+labelinput input[type=text] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+rate {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+}
+rate i {
+  background: #fcfcfc;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+rate input[type=text] {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+fieldset {
+  display: block;
+}
+
+/*Form Columns*/
+form-twocolumn {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(325px, 25%));
+  gap: 50px;
+  justify-content: center;
+}
+
+form-threecolumn {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 50px;
+  justify-content: center;
+}
+
+form-fourcolumn {
+  display: grid;
+  grid-template-columns: 15% repeat(3, calc((85% - 150px)/3));
+  gap: 50px;
+  justify-content: center;
+}
+
+input-twocolumn {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 8px;
+}
+
+radioinline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+forminline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+ratepercentage {
+  display: flex;
+  align-items: center;
+}
+ratepercentage i {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/*Four Radio in a line*/
+optionfour {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
 /*QV-VC Header*/
 qv-headervc {
   grid-column: 1/3;
@@ -422,168 +584,6 @@ svg {
   stroke-width: 4px;
 }
 
-/*QV-VC Form*/
-qv-formsvc {
-  display: block;
-  max-width: 1300px;
-  margin: auto;
-  height: calc(100% - 351px);
-}
-qv-formsvc h2 {
-  text-align: center;
-}
-qv-formsvc form {
-  display: block;
-}
-qv-formsvc form input, qv-formsvc form select {
-  margin-bottom: 15px;
-}
-qv-formsvc form button {
-  width: 100%;
-}
-
-selectleft {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-}
-selectleft input[type=text] {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left: none;
-}
-selectleft select {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-selectright {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-}
-selectright i {
-  background: #fcfcfc;
-  padding: 10px;
-  border: 1px solid #e1e1e1;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 13px;
-  margin-bottom: 15px;
-  text-align: center;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-selectright select {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left: none;
-}
-
-labelinput {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-}
-labelinput i {
-  background: #fcfcfc;
-  padding: 10px;
-  border: 1px solid #e1e1e1;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 13px;
-  margin-bottom: 15px;
-  text-align: center;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-labelinput input[type=text] {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left: none;
-}
-
-rate {
-  display: grid;
-  grid-template-columns: 1fr 30px;
-}
-rate i {
-  background: #fcfcfc;
-  padding: 10px;
-  border: 1px solid #e1e1e1;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 13px;
-  margin-bottom: 15px;
-  text-align: center;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left: none;
-}
-rate input[type=text] {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-fieldset {
-  display: block;
-}
-
-/*Form Columns*/
-form-twocolumn {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(325px, 25%));
-  gap: 50px;
-  justify-content: center;
-}
-
-form-threecolumn {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  gap: 50px;
-  justify-content: center;
-}
-
-form-fourcolumn {
-  display: grid;
-  grid-template-columns: 15% repeat(3, calc((85% - 150px)/3));
-  gap: 50px;
-  justify-content: center;
-}
-
-input-twocolumn {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  gap: 8px;
-}
-
-radioinline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-forminline {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-ratepercentage {
-  display: flex;
-  align-items: center;
-}
-ratepercentage i {
-  padding-left: 10px;
-  margin-bottom: 15px;
-}
-
-/*Four Radio in a line*/
-optionfour {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  max-width: 1000px;
-  margin: 0 auto 30px;
-}
-
 /*QV-VC Main*/
 body {
   display: grid;
@@ -595,10 +595,56 @@ qv-mainvc {
   padding: 30px;
 }
 
-radiowrap radio {
-  display: block;
-  margin: 0;
+qv-profiletab {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+qv-profiletab a {
+  cursor: pointer;
   text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 27px 15px;
+  color: #1f0488;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  text-align: center;
+}
+qv-profiletab a.current__tab {
+  color: #fff;
+  background: #1f0488;
+}
+qv-profiletab a:last-child {
+  border-bottom: 1px solid #e1e1e1;
 }
 
-/*# sourceMappingURL=property.css.map */
+radiowrap radio {
+  display: block;
+  margin: 0 0 10px;
+}
+
+/*two column one tab second form*/
+qv-formsvc {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 200px;
+}
+
+form {
+  padding-top: 25px;
+}
+
+/*profile tab*/
+.tab-content {
+  display: none;
+  gap: 50px;
+  grid-template-columns: repeat(2, 30%);
+}
+.tab-content.current__tab {
+  display: grid;
+}
+
+/*# sourceMappingURL=profile.css.map */

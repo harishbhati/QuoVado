@@ -2,10 +2,12 @@ class QvHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `          
             <header><!--QV-VC Header -->
-                <img src="images/quovado.png" alt="QuoVado">
-            </header>
+                <a href="home.html">
+                    <img src="images/quovado.png" alt="QuoVado">
+                </header>
+            </a>
         `
     }
 }
 
-customElements.define('qv-header', QvHeader)
+customElements.define('qv-headervc', QvHeader)

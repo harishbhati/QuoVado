@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QyoVado Creator">
+    <meta name="author" content="QyoVado">
+    <title>QyoVado - Profile</title>
+    <link type="image/png" rel="icon" sizes="16x16" href="images/quo-favicon-32x32.png">
+    <link href="dist/css/profile.css" rel='stylesheet' type='text/css' media='all'>
+</head>
+<body>
+    <qv-headervc></qv-headervc><!--QV-VC Header-->
+
+    <qv-lifestoriesvc></qv-lifestoriesvc><!--QV-VC Sidebar-->
+
+    <qv-mainvc><!--main Block-->
+        <qv-formsvc> <!--QV-VC form -->
+            <qv-profiletab><!--QV-VC Profile Sidebar-->
+                <a class="current__tab" data-tab="story-tab">Life Story</a>
+                <a data-tab="residency-tab">Residency</a>
+                <a data-tab="family-tab">Family</a>
+                <a data-tab="education-tab">Education</a>
+                <a data-tab="work-tab">Work</a>
+            </qv-profiletab>
+            
+            <form>
+                <qv-tabcontentVC id="story-tab" class="tab-content current__tab"><!--Story Tab Form-->
+                    <fieldset><!--First Column-->
+                        <inputgroup><!--First Name-->
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Last Name-->
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Date of Birth-->
+                            <label for="birth">Date of Birth</label>
+                            <input type="date" name="birth" value="2018-07-22"
+                            min="2000-01-01" max="2018-12-31">
+                        </inputgroup>
+                        
+                        <inputgroup><!--Address 1-->
+                            <label for="add1">Address</label>
+                            <input type="text" name="add1" required>
+                        </inputgroup>
+                    </fieldset>
+                    <fieldset><!--Second Column-->
+                    
+                        <inputgroup><!--Address 2-->
+                            <label for="add2">Address 2</label>
+                            <input type="text" name="add2" required>
+                        </inputgroup>
+
+                        <inputgroup><!--City Box-->
+                            <label for="city">City</label>
+                            <input type="text" name="city" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Region Box-->
+                            <label for="region">State/Region</label>
+                            <input type="text" name="region" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Postal Code Box-->
+                            <label for="postal">Postal Code</label>
+                            <input type="text" name="postal" required>
+                        </inputgroup>
+                    </fieldset>
+                </qv-tabcontentVC>
+
+                <qv-tabcontentVC id="residency-tab" class="tab-content"><!--Residency Tab Form-->
+                    <fieldset><!--First Column-->
+                        <inputgroup><!--Country Select Box-->
+                            <label for="business">Country</label>
+                            <select name="qv-select" id="select">
+                                <option value="America" selected>America</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                        </inputgroup>
+
+                        <inputgroup><!--How many years there-->
+                            <label for="years">How many years there?</label>
+                            <input type="text" name="years" required>
+                        </inputgroup>
+                    </fieldset>
+                </qv-tabcontentVC>
+
+                <qv-tabcontentVC id="family-tab" class="tab-content"><!--Family Tab Form-->
+                    <fieldset><!--First Column-->
+                        <radiowrap><!--Marital Status</label> Radio-->
+                            <label for="identifier">Marital Status</label>
+                            <radio>
+                                <input type="radio" name="marital" value="Single" checked>
+                                <label for="single">Single</label>
+                            </radio>
+                            <radio>
+                                <input type="radio" name="marital" value="Married">
+                                <label for="married">Married</label>
+                            </radio>
+                            <radio>
+                                <input type="radio" name="marital" value="Divorced">
+                                <label for="divorced">Divorced</label>
+                            </radio>
+                        </radiowrap>
+                    </fieldset>
+
+                    <fieldset><!--Second Column-->
+                        <inputgroup><!--Year Married Box-->
+                            <label for="myears">Year Married?</label>
+                            <input type="text" name="myears" required>
+                        </inputgroup>
+
+                        <inputgroup><!--How many children Select Box-->
+                            <label for="children">How many children?</label>
+                            <select name="qv-select" id="select">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </inputgroup>
+                    </fieldset>
+                </qv-tabcontentVC>
+
+                <qv-tabcontentVC id="education-tab" class="tab-content"><!--Education Tab Form-->
+                    <fieldset><!--First Column-->
+                        <inputgroup><!--School Name-->
+                            <label for="school">School Name</label>
+                            <input type="text" name="school" required>
+                        </inputgroup>
+
+                        <inputgroup><!--School Location-->
+                            <label for="slocation">School Location?</label>
+                            <select name="qv-select" id="select">
+                                <option value="Califonia" selected>Califonia</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                        </inputgroup>
+
+                        <inputgroup><!--Type of Education Select Box-->
+                            <label for="education">Type of Education?</label>
+                            <select name="qv-select" id="select">
+                                <option value="College" selected>College</option>
+                                <option value="University">University</option>
+                                <option value="Technical Trade">Technical Trade</option>
+                            </select>
+                        </inputgroup>
+                    </fieldset>
+
+                    <fieldset><!--Second Column-->
+                        <inputgroup><!--School Year Select Box-->
+                            <label for="sYear">School Year?</label>
+                            <select name="qv-select" id="select">
+                                <option value="2002" selected>2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                        </inputgroup>
+                    </fieldset>
+                </qv-tabcontentVC>
+
+                <qv-tabcontentVC id="work-tab" class="tab-content"><!--Work Tab Form-->
+                    <fieldset><!--First Column-->
+                        <inputgroup><!--Where do you work Input Box-->
+                            <label for="lwork">Where do you work?</label>
+                            <input type="text" name="lwork" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Type of work Input Box-->
+                            <label for="twork">Type of work?</label>
+                            <input type="text" name="twork" required>
+                        </inputgroup>
+                    </fieldset>
+
+                    <fieldset><!--Second Column-->
+                        <inputgroup><!--How many years Input Box-->
+                            <label for="nyears">How many years?</label>
+                            <input type="text" name="nyears" required>
+                        </inputgroup>
+                    </fieldset>
+                </qv-tabcontentVC>
+            </form>
+        </qv-formsvc>
+
+        <qv-iconsvc></qv-iconsvc><!--qv-iconsvc-->
+        
+        <qv-interviewvc></qv-interviewvc><!--qv-interviewvc block-->
+    </qv-mainvc>
+    <script src="components/profile.js" type='text/javascript'></script>
+    <script src="components/header.js" type='text/javascript'></script>
+    <script src="components/sidebar.js" type='text/javascript'></script>
+    <script src="components/button.js" type='text/javascript'></script>
+    <script src="components/footer.js" type='text/javascript'></script>
+</body>
+</html>

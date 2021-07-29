@@ -11,147 +11,149 @@
     <link href="dist/css/business.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
-    <!--Add  qv-header tag to add header-->
+    <qv-headervc></qv-headervc><!--QV-VC Header-->
 
-    <qv-main><!--QV-VC main -->
-        <!--Add  qv-sidebar tag to add sidebar-->
+    <qv-lifestoriesvc></qv-lifestoriesvc><!--QV-VC Sidebar-->
 
-        <section> <!--QV-VC Content section -->
-            <qv-form> <!--QV-VC form -->
-                <form>
-                    <h2>Business Assets</h2>
-                    <hr>
-                    <form-threecolumn>
-                        <fieldset><!--QV-VC First Column-->
-                            <label for="country">Country</label><!--Country-->
-                            <selectright>
-                                <i>SPG</i>
-                                <select name="qv-select" id="select">
-                                    <option value="Singapore" selected>Singapore</option>
-                                    <option value="India">India</option>
-                                </select>
-                            </selectright>
+    <qv-mainvc><!--QV-VC main -->
+        <qv-formsvc> <!--QV-VC formsvc -->
+            <form>
+                <h2>Business Assets</h2>
+                <hr>
+                <form-threecolumn>
+                    <fieldset><!--QV-VC First Column-->
+                        <label for="country">Country</label><!--Country-->
+                        <selectright>
+                            <i>SPG</i>
+                            <select name="qv-select" id="select">
+                                <option value="Singapore" selected>Singapore</option>
+                                <option value="India">India</option>
+                            </select>
+                        </selectright>
 
-                            <inputgroup><!--Business Name-->
-                                <label for="business">Business Name</label>
-                                <input type="text" name="business" required>
+                        <inputgroup><!--Business Name-->
+                            <label for="business">Business Name</label>
+                            <input type="text" name="business" required>
+                        </inputgroup>
+
+                        <inputgroup><!--Field Or Selector-->
+                            <label for="business">Field Or Selector</label>
+                            <select name="qv-select" id="select">
+                                <option value="Consulting" selected>Consulting</option>
+                                <option value="Select_1">Select 1</option>
+                            </select>
+                        </inputgroup>
+                    </fieldset>
+
+                    <fieldset><!--QV-VC Second Column-->
+                        <input-twocolumn>
+                            <inputgroup><!--Business Value-->
+                                <label for="amount">Business Value</label>
+                                <labelinput>
+                                    <i>SGP</i>
+                                    <input type="text" name="business">
+                                </labelinput>
                             </inputgroup>
 
-                            <inputgroup><!--Field Or Selector-->
-                                <label for="business">Field Or Selector</label>
-                                <select name="qv-select" id="select">
-                                    <option value="Consulting" selected>Consulting</option>
-                                    <option value="Select_1">Select 1</option>
-                                </select>
+                            <inputgroup><!--Owned-->
+                                <selectwrap>
+                                    <label for="amount">Owned</label>
+                                    <rate>
+                                        <input type="text" name="owned">
+                                        <i>%</i>
+                                    </rate>
+                                </selectwrap>
                             </inputgroup>
-                        </fieldset>
+                        </input-twocolumn>
 
-                        <fieldset><!--QV-VC Second Column-->
-                            <input-twocolumn>
-                                <inputgroup><!--Business Value-->
-                                    <label for="amount">Business Value</label>
-                                    <labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="business">
-                                    </labelinput>
-                                </inputgroup>
+                        <input-twocolumn>
+                            <inputgroup><!--Age of Sell or Retirement-->
+                                <label for="retirement">Age of Sell or Retirement</label>
+                                <input type="date" name="retirement-age" value="2018-07-22"
+                                min="2000-01-01" max="2018-12-31">
+                            </inputgroup>
+                        </input-twocolumn>
+                    </fieldset>
 
-                                <inputgroup><!--Owned-->
-                                    <selectwrap>
-                                        <label for="amount">Owned</label>
-                                        <rate>
-                                            <input type="text" name="owned">
-                                            <i>%</i>
-                                        </rate>
-                                    </selectwrap>
-                                </inputgroup>
-                            </input-twocolumn>
+                    <fieldset><!--QV-VC Third Column-->
+                        <label for="amount">Income Type</label>
+                        <forminline><!--three input in a line-->
+                            <checkboxwrap>
+                                <checkbox><!--Checkbox Salary-->
+                                    <input type="checkbox" name="salary" value="Salary">
+                                    <label for="reinvested">Salary</label>
+                                </checkbox>
 
-                            <input-twocolumn>
-                                <inputgroup><!--Age of Sell or Retirement-->
-                                    <label for="retirement">Age of Sell or Retirement</label>
-                                    <input type="date" name="retirement-age" value="2018-07-22"
-                                    min="2000-01-01" max="2018-12-31">
-                                </inputgroup>
-                            </input-twocolumn>
-                        </fieldset>
+                                <checkbox><!--Checkbox Projected-->
+                                    <input type="checkbox" name="projected" value="Projected">
+                                    <label for="projected">Projected?</label>
+                                </checkbox>
+                            </checkboxwrap>
+                            
+                            <inputgroup><!--Amount-->
+                                <label for="amount">Amount</label>
+                                <labelinput>
+                                    <i>SGP</i>
+                                    <input type="text" name="amount">
+                                </labelinput>
+                            </inputgroup>
+                        </forminline>
 
-                        <fieldset><!--QV-VC Third Column-->
-                            <label for="amount">Income Type</label>
-                            <forminline><!--three input in a line-->
-                                <checkboxwrap>
-                                    <checkbox><!--Checkbox Salary-->
-                                        <input type="checkbox" name="salary" value="Salary">
-                                        <label for="reinvested">Salary</label>
-                                    </checkbox>
+                        <forminline><!--three input in a line-->
+                            <checkboxwrap>
+                                <checkbox><!--Checkbox Dividends-->
+                                    <input type="checkbox" name="dividends" value="dividends">
+                                    <label for="dividends">Dividends</label>
+                                </checkbox>
 
-                                    <checkbox><!--Checkbox Projected-->
-                                        <input type="checkbox" name="projected" value="Projected">
-                                        <label for="projected">Projected?</label>
-                                    </checkbox>
-                                </checkboxwrap>
-                                
-                                <inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </labelinput>
-                                </inputgroup>
-                            </forminline>
+                                <checkbox><!--Checkbox Projected-->
+                                    <input type="checkbox" name="projected" value="Projected">
+                                    <label for="projected">Projected?</label>
+                                </checkbox>
+                            </checkboxwrap>
 
-                            <forminline><!--three input in a line-->
-                                <checkboxwrap>
-                                    <checkbox><!--Checkbox Dividends-->
-                                        <input type="checkbox" name="dividends" value="dividends">
-                                        <label for="dividends">Dividends</label>
-                                    </checkbox>
+                            <inputgroup><!--Amount-->
+                                <label for="amount">Amount</label>
+                                <labelinput>
+                                    <i>SGP</i>
+                                    <input type="text" name="amount">
+                                </labelinput>
+                            </inputgroup>
+                        </forminline>
 
-                                    <checkbox><!--Checkbox Projected-->
-                                        <input type="checkbox" name="projected" value="Projected">
-                                        <label for="projected">Projected?</label>
-                                    </checkbox>
-                                </checkboxwrap>
+                        <forminline><!--three input in a line-->
+                            <checkboxwrap>
+                                <checkbox><!--Checkbox Directors Fees-->
+                                    <input type="checkbox" name="directors" value="directors">
+                                    <label for="directors">Directors Fees</label>
+                                </checkbox>
 
-                                <inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </labelinput>
-                                </inputgroup>
-                            </forminline>
+                                <checkbox><!--Checkbox Projected-->
+                                    <input type="checkbox" name="projected" value="Projected">
+                                    <label for="projected">Projected?</label>
+                                </checkbox>
+                            </checkboxwrap>
+                            
+                            <inputgroup><!--Amount-->
+                                <label for="amount">Amount</label>
+                                <labelinput>
+                                    <i>SGP</i>
+                                    <input type="text" name="amount">
+                                </labelinput>
+                            </inputgroup>
+                        </forminline>
+                    </fieldset>
+                </form-threecolumn>
+            </form>
+        </qv-formsvc>
 
-                            <forminline><!--three input in a line-->
-                                <checkboxwrap>
-                                    <checkbox><!--Checkbox Directors Fees-->
-                                        <input type="checkbox" name="directors" value="directors">
-                                        <label for="directors">Directors Fees</label>
-                                    </checkbox>
+        <qv-iconsvc></qv-iconsvc><!--qv-iconsvc-->
 
-                                    <checkbox><!--Checkbox Projected-->
-                                        <input type="checkbox" name="projected" value="Projected">
-                                        <label for="projected">Projected?</label>
-                                    </checkbox>
-                                </checkboxwrap>
-                                
-                                <inputgroup><!--Amount-->
-                                    <label for="amount">Amount</label>
-                                    <labelinput>
-                                        <i>SGP</i>
-                                        <input type="text" name="amount">
-                                    </labelinput>
-                                </inputgroup>
-                            </forminline>
-                        </fieldset>
-                    </form-threecolumn>
-                </form>
-            </qv-form>
-
-            <qv-savebutton></qv-savebutton><!--Action Icons and Save Button-->
-            <!--Add  qv-footer tag to add footer-->
-        </section>
-    </qv-main>
+        <qv-interviewvc></qv-interviewvc><!--qv-interviewvc block-->
+    </qv-mainvc>
+    <script src="components/header.js" type='text/javascript'></script>
+    <script src="components/sidebar.js" type='text/javascript'></script>
     <script src="components/button.js" type='text/javascript'></script>
+    <script src="components/footer.js" type='text/javascript'></script>
 </body>
 </html>

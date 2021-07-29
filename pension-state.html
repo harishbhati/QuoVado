@@ -11,103 +11,105 @@
     <link href="dist/css/pensionall.css" rel='stylesheet' type='text/css' media='all'>
 </head>
 <body>
-    <!--Add  qv-header tag to add header-->
+    <qv-headervc></qv-headervc><!--QV-VC Header-->
+
+    <qv-lifestoriesvc></qv-lifestoriesvc><!--QV-VC Sidebar-->
     
-    <qv-main><!--QV-VC main -->
-        <!--Add  qv-sidebar tag to add sidebar-->
+    <qv-mainvc><!--QV-VC main -->
+        <qv-formsvc> <!--QV-VC formsvc -->
+            <form>
+                <h2>Pension Assets - State</h2>
+                <hr>
+                <optionfour><!--Pension Option-->
+                    <radio><!--Radio Company-->
+                        <input type="radio" name="company" value="Company">
+                        <label for="company">Company</label>
+                    </radio>
 
-        <section> <!--QV-VC Content section -->
-            <qv-form> <!--QV-VC form -->
-                <form>
-                    <h2>Pension Assets - State</h2>
-                    <hr>
-                    <optionfour><!--Pension Option-->
-                        <radio><!--Radio Company-->
-                            <input type="radio" name="company" value="Company">
-                            <label for="company">Company</label>
-                        </radio>
+                    <radio><!--Radio State-->
+                        <input type="radio" name="state" value="State" checked>
+                        <label for="state">State</label>
+                    </radio>
 
-                        <radio><!--Radio State-->
-                            <input type="radio" name="state" value="State" checked>
-                            <label for="state">State</label>
-                        </radio>
+                    <radio><!--Radio Annuities-->
+                        <input type="radio" name="annuities" value="Annuities">
+                        <label for="annuities">Annuities</label>
+                    </radio>
 
-                        <radio><!--Radio Annuities-->
-                            <input type="radio" name="annuities" value="Annuities">
-                            <label for="annuities">Annuities</label>
-                        </radio>
+                    <radio><!--Radio Private-->
+                        <input type="radio" name="private" value="Private">
+                        <label for="private">Private</label>
+                    </radio>
+                </optionfour>
+                <form-twocolumn>
+                    <fieldset><!--QV-VC Firts Column-->
+                        <label for="country">Country</label><!--Country-->
+                        <selectright>
+                            <i>SPG</i>
+                            <select name="qv-select" id="select">
+                                <option value="Singapore" selected>Singapore</option>
+                                <option value="India">India</option>
+                            </select>
+                        </selectright>
 
-                        <radio><!--Radio Private-->
-                            <input type="radio" name="private" value="Private">
-                            <label for="private">Private</label>
-                        </radio>
-                    </optionfour>
-                    <form-twocolumn>
-                        <fieldset><!--QV-VC Firts Column-->
-                            <label for="country">Country</label><!--Country-->
-                            <selectright>
-                                <i>SPG</i>
-                                <select name="qv-select" id="select">
-                                    <option value="Singapore" selected>Singapore</option>
-                                    <option value="India">India</option>
-                                </select>
-                            </selectright>
+                        <input-twocolumn><!--Amount Select-->
+                            <selectwrap>
+                                <label for="amount">Amount</label>
+                                <selectleft>
+                                    <select name="qv-select" id="select">
+                                        <option value="SPG" selected>SPG</option>
+                                        <option value="CHK">CHK</option>
+                                    </select>
+                                    <input type="text" name="amount">
+                                </selectleft>
+                            </selectwrap>
+                        </input-twocolumn>
 
-                            <input-twocolumn><!--Amount Select-->
-                                <selectwrap>
-                                    <label for="amount">Amount</label>
-                                    <selectleft>
-                                        <select name="qv-select" id="select">
-                                            <option value="SPG" selected>SPG</option>
-                                            <option value="CHK">CHK</option>
-                                        </select>
-                                        <input type="text" name="amount">
-                                    </selectleft>
-                                </selectwrap>
-                            </input-twocolumn>
+                        <radioinline><!--Radio Frequency-->
+                            <label for="frequency">Frequency</label>
+                            <radio>
+                                <input type="radio" name="frequency" value="Monthly" checked>
+                                <label for="monthly">Monthly</label>
+                            </radio>
+                            <radio>
+                                <input type="radio" name="lumpsum" value="Annually">
+                                <label for="annually">Annually</label>
+                            </radio>
+                        </radioinline>
+                    </fieldset>
 
-                            <radioinline><!--Radio Frequency-->
-                                <label for="frequency">Frequency</label>
-                                <radio>
-                                    <input type="radio" name="frequency" value="Monthly" checked>
-                                    <label for="monthly">Monthly</label>
-                                </radio>
-                                <radio>
-                                    <input type="radio" name="lumpsum" value="Annually">
-                                    <label for="annually">Annually</label>
-                                </radio>
-                            </radioinline>
-                        </fieldset>
+                    <fieldset><!--QV-VC Two Column-->
+                        <radioinline><!--Radio Index Linked-->
+                            <label for="index">Index Linked</label>
+                            <radio>
+                                <input type="radio" name="index" value="Yes" checked>
+                                <label for="yes">Yes</label>
+                            </radio>
+                            <radio>
+                                <input type="radio" name="index" value="No">
+                                <label for="no">No</label>
+                            </radio>
+                        </radioinline>
+                        
+                        <inputgroup><!--Age Received Selectbox-->
+                            <label for="age">Age Received</label>
+                            <select name="qv-select" id="select">
+                                <option value="Select" selected>Select</option>
+                                <option value="Select_1">Select 1</option>
+                            </select>
+                        </inputgroup>
+                    </fieldset>
+                </form-twocolumn>
+            </form>
+        </qv-formsvc>
+        
+        <qv-iconsvc></qv-iconsvc><!--qv-iconsvc-->
 
-                        <fieldset><!--QV-VC Two Column-->
-                            <radioinline><!--Radio Index Linked-->
-                                <label for="index">Index Linked</label>
-                                <radio>
-                                    <input type="radio" name="index" value="Yes" checked>
-                                    <label for="yes">Yes</label>
-                                </radio>
-                                <radio>
-                                    <input type="radio" name="index" value="No">
-                                    <label for="no">No</label>
-                                </radio>
-                            </radioinline>
-                            
-                            <inputgroup><!--Age Received Selectbox-->
-                                <label for="age">Age Received</label>
-                                <select name="qv-select" id="select">
-                                    <option value="Select" selected>Select</option>
-                                    <option value="Select_1">Select 1</option>
-                                </select>
-                            </inputgroup>
-                        </fieldset>
-                    </form-twocolumn>
-                </form>
-            </qv-form>
-            
-            <qv-savebutton></qv-savebutton><!--Action Icons and Save Button-->
-            <!--Add  qv-footer tag to add footer-->
-        </section>
-    </qv-main>
+        <qv-interviewvc></qv-interviewvc><!--qv-interviewvc block-->
+    </qv-mainvc>
+    <script src="components/header.js" type='text/javascript'></script>
+    <script src="components/sidebar.js" type='text/javascript'></script>
     <script src="components/button.js" type='text/javascript'></script>
+    <script src="components/footer.js" type='text/javascript'></script>
 </body>
 </html>

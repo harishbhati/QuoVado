@@ -186,7 +186,7 @@ radio, checkbox {
   opacity: 1;
 }
 
-qv-main {
+qv-mainvc {
   display: flex;
   justify-content: center;
   align-items: center;
