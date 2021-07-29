@@ -187,10 +187,17 @@ button {
 }
 
 /*QV-VC Header*/
+qv-headervc {
+  grid-column: 1/3;
+}
+
 header {
   padding: 10px 20px;
   border-bottom: 1px solid #e1e1e1;
   display: block;
+}
+header a {
+  cursor: pointer;
 }
 header img {
   max-width: 155px;
@@ -212,7 +219,7 @@ hr {
 }
 
 /*QV-VC Aside*/
-qv-sidebar {
+qv-lifestoriesvc {
   border-right: 1px solid #e1e1e1;
 }
 
@@ -276,18 +283,19 @@ aside article details a {
 article {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 40px;
 }
 
 /*QV-VC Save Button and Action icons*/
-qv-savebutton {
+qv-iconsvc {
   display: grid;
   grid-template-columns: 1fr 25%;
+  gap: 50px;
   align-items: center;
   max-width: 1400px;
   margin: 50px auto 20px;
 }
-qv-savebutton .fill-blue {
+qv-iconsvc .fill-blue {
   min-width: 180px;
 }
 
@@ -307,16 +315,43 @@ figure h4 {
   text-transform: uppercase;
   font-weight: 400;
 }
-figure:first-child {
-  margin-right: 65px;
+figure:nth-child(1) {
+  stroke: #201786;
+  fill: rgba(31, 14, 136, 0.5);
+  margin-right: auto;
+  display: flex;
+  gap: 130px;
 }
-figure:first-child a::after {
+figure:nth-child(1)::after {
   content: "";
   background: #e1e1e1;
   width: 2px;
   height: 80%;
-  position: absolute;
-  right: -55px;
+  display: inline-block;
+}
+figure:nth-child(2) {
+  stroke: #229a99;
+  fill: rgba(22, 154, 154, 0.2);
+}
+figure:nth-child(3) {
+  stroke: #ce5668;
+  fill: rgba(208, 85, 102, 0.2);
+}
+figure:nth-child(4) {
+  stroke: #227623;
+  fill: rgba(29, 119, 29, 0.2);
+}
+figure:nth-child(5) {
+  stroke: #e5c83f;
+  fill: rgba(230, 201, 44, 0.2);
+}
+figure:nth-child(6) {
+  stroke: #262626;
+  fill: rgba(38, 38, 38, 0.2);
+}
+figure:nth-child(7) {
+  stroke: #cc5518;
+  fill: rgba(204, 85, 24, 0.2);
 }
 figure i {
   display: block;
@@ -328,6 +363,10 @@ select {
 }
 
 /*Cash footer*/
+qv-interviewvc {
+  display: block;
+}
+
 footer {
   display: block;
 }
@@ -347,31 +386,31 @@ footer nav ul a {
 }
 
 .violet {
-  color: #8b87c3;
+  color: #201786;
 }
 
 .teal {
-  color: #27938f;
+  color: #229a99;
 }
 
 .brown {
-  color: #e5a7b2;
+  color: #ce5668;
 }
 
 .green {
-  color: #7ea37e;
+  color: #227623;
 }
 
 .yellow {
-  color: #cfc075;
+  color: #e5c83f;
 }
 
 .black {
-  color: #717171;
+  color: #262626;
 }
 
 .biscuit {
-  color: #d2a091;
+  color: #cc5518;
 }
 
 svg {
@@ -379,22 +418,27 @@ svg {
   height: 60px;
 }
 
+.icon__active svg {
+  stroke-width: 4px;
+}
+
 /*QV-VC Form*/
-qv-form {
+qv-formsvc {
   display: block;
   max-width: 1300px;
   margin: auto;
+  height: calc(100% - 351px);
 }
-qv-form h2 {
+qv-formsvc h2 {
   text-align: center;
 }
-qv-form form {
+qv-formsvc form {
   display: block;
 }
-qv-form form input, qv-form form select {
+qv-formsvc form input, qv-formsvc form select {
   margin-bottom: 15px;
 }
-qv-form form button {
+qv-formsvc form button {
   width: 100%;
 }
 
@@ -541,14 +585,14 @@ optionfour {
 }
 
 /*QV-VC Main*/
-qv-main {
-  display: flex;
-  height: calc(100% - 77px);
+body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 77px 1fr;
 }
-qv-main > section {
+
+qv-mainvc {
   padding: 30px;
-  margin-inline: auto;
-  flex: 0 0 calc(100% - 200px);
 }
 
 form-twocolumn fieldset:last-child {

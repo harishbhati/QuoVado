@@ -1,10 +1,9 @@
 /*QV-VC Main*/
-qv-main {
-    display: flex;
-    height: calc(100% - 77px);
-    &>section{
-        padding: 30px; 
-        margin-inline: auto;
-        flex: 0 0 calc(100% - 200px);
-    }
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 77px 1fr;
+}
+qv-mainvc {
+    padding: 30px; 
 }

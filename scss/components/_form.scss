@@ -1,8 +1,9 @@
 /*QV-VC Form*/
-qv-form{
+qv-formsvc{
     display: block;
     max-width: 1300px;
     margin: auto;
+    height: calc(100% - 351px);
     h2{
         text-align: center;
     }

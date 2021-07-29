@@ -42,4 +42,4 @@ class QvSidebar extends HTMLElement{
     }
 }
 
-customElements.define('qv-sidebar', QvSidebar);
+customElements.define('qv-lifestoriesvc', QvSidebar);

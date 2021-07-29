@@ -37,4 +37,4 @@ class QvFooter extends HTMLElement{
     }
 }
 
-customElements.define('qv-footer', QvFooter);
+customElements.define('qv-interviewvc', QvFooter);
