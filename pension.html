@@ -18,91 +18,29 @@
     <qv-mainvc><!--QV-VC main -->
         <qv-formsvc> <!--QV-VC formsvc -->
             <form>
-                <h2>Pension Assets</h2>
+                <h2>Pension Assets - Private</h2>
                 <hr>
-                <form-threecolumn>
-                    <fieldset>
-                        <label for="country">Country</label><!--Country-->
-                        <selectright>
-                            <i>SPG</i>
-                            <select name="qv-select" id="select">
-                                <option value="Singapore" selected>Singapore</option>
-                                <option value="India">India</option>
-                            </select>
-                        </selectright>
+                <optionfour><!--Pension Option-->
+                    <radio><!--Radio Company-->
+                        <input type="radio" name="pension" value="Company">
+                        <label for="company">Company</label>
+                    </radio>
 
-                        <inputgroup><!--Company Name-->
-                            <label for="company">Company Name</label>
-                            <input type="text" name="company" required>
-                        </inputgroup>
+                    <radio><!--Radio State-->
+                        <input type="radio" name="pension" value="State">
+                        <label for="state">State</label>
+                    </radio>
 
-                        <inputgroup><!--Organization Select Box-->
-                            <label for="organization">Organization</label>
-                            <select name="qv-select" id="select">
-                                <option value="Select" selected>Select</option>
-                                <option value="Value1">Value1</option>
-                                <option value="Value2">Value2</option>
-                            </select>
-                        </inputgroup>
-                    </fieldset>
+                    <radio><!--Radio Annuities-->
+                        <input type="radio" name="pension" value="Annuities">
+                        <label for="annuities">Annuities</label>
+                    </radio>
 
-                    <fieldset>
-                        <inputgroup><!--Identifier Select Box-->
-                            <label for="identifier">Identifier</label>
-                            <select name="qv-select" id="select">
-                                <option value="Select" selected>Select</option>
-                                <option value="Value1">Value1</option>
-                                <option value="Value2">Value2</option>
-                            </select>
-                        </inputgroup>
-
-                        <input-twocolumn><!--Age Expected-->
-                            <inputgroup>
-                                <label for="age">Age Expected</label>
-                                <input type="text" name="age" required>
-                            </inputgroup>
-                        </input-twocolumn>
-
-                        <radioinline><!--Radio Lump Sum-->
-                            <label for="lumpsum">Lump Sum</label>
-                            <radio>
-                                <input type="radio" name="lumpsum" value="Yes" checked>
-                                <label for="yes">Yes</label>
-                            </radio>
-                            <radio>
-                                <input type="radio" name="lumpsum" value="No">
-                                <label for="no">No</label>
-                            </radio>
-                        </radioinline>
-
-                        <input-twocolumn><!--Amount Select-->
-                            <selectwrap>
-                                <label for="amount">Amount</label>
-                                <selectleft>
-                                    <select name="qv-select" id="select">
-                                        <option value="SPG" selected>SPG</option>
-                                        <option value="CHK">CHK</option>
-                                    </select>
-                                    <input type="text" name="amount">
-                                </selectleft>
-                            </selectwrap>
-                        </input-twocolumn>
-                    </fieldset>
-
-                    <fieldset>
-                        <radioinline><!--Radio Index Linked-->
-                            <label for="index">Index Linked</label>
-                            <radio>
-                                <input type="radio" name="index" value="Yes" checked>
-                                <label for="yes">Yes</label>
-                            </radio>
-                            <radio>
-                                <input type="radio" name="index" value="No">
-                                <label for="no">No</label>
-                            </radio>
-                        </radioinline>
-                    </fieldset>
-                </form-threecolumn>
+                    <radio><!--Radio Private-->
+                        <input type="radio" name="pension" value="Private">
+                        <label for="private">Private</label>
+                    </radio>
+                </optionfour>
             </form>
         </qv-formsvc>
         

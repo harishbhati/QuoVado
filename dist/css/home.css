@@ -63,6 +63,10 @@ radio, checkbox {
   margin-right: 25px;
 }
 
+checkbox {
+  display: flex;
+}
+
 [type=radio]:checked,
 [type=radio]:not(:checked), [type=checkbox]:checked,
 [type=checkbox]:not(:checked) {

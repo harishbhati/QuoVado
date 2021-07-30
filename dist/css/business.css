@@ -63,6 +63,10 @@ radio, checkbox {
   margin-right: 25px;
 }
 
+checkbox {
+  display: flex;
+}
+
 [type=radio]:checked,
 [type=radio]:not(:checked), [type=checkbox]:checked,
 [type=checkbox]:not(:checked) {
@@ -579,7 +583,8 @@ ratepercentage i {
 optionfour {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  justify-content: center;
+  gap: 80px;
   max-width: 1000px;
   margin: 0 auto 30px;
 }
