@@ -3,6 +3,9 @@ body{
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 77px 1fr;
+    @include device(ipad){
+        grid-template-columns: 170px 1fr;
+    }
 }
 qv-mainvc {
     padding: 30px; 

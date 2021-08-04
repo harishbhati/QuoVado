@@ -46,6 +46,9 @@ qv-formsvc{
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 200px;
+    @include device(ipad){
+        gap: 20px;
+    }
 }
 form{
     padding-top: 25px;
@@ -55,6 +58,10 @@ form{
     display: none;
     gap: 50px;
     grid-template-columns: repeat(2,30%);
+    @include device(ipad){
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
     &.current__tab{
         display: grid;
     }

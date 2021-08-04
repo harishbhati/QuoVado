@@ -5,6 +5,9 @@ radio{
 }
 ratepercentage{
     width: 40%;
+    @include device(ipad){
+        width: 100%;
+    }
 }
 checkbox{
     align-self: center;

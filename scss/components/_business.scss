@@ -1,3 +1,8 @@
 qv-equalthree{
     align-items: center;
 }
+form-threecolumn{
+    @include device(sm-ipad){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

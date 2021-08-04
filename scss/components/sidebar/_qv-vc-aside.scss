@@ -6,6 +6,10 @@ aside{
     flex: 0 0 200px;
     h2{
         margin-bottom: 30px;
+        @include device(ipad){
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
     }
     section {
         display: grid;
@@ -35,6 +39,9 @@ aside{
     article {
         padding: 30px 20px;
         display: block;
+        @include device(ipad){
+            padding: 20px 10px;
+        }
         details {
             margin-bottom: 35px;
             display: block;
@@ -43,6 +50,9 @@ aside{
                 text-transform: uppercase;
                 font-size: 16px;
                 list-style: none;
+                @include device(ipad){
+                    font-size: 14px;
+                }
             }
             p{
                 font-size: 14px;

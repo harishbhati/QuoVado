@@ -4,6 +4,9 @@ qv-formsvc{
     max-width: 1300px;
     margin: auto;
     height: calc(100% - 351px);
+    @include device(ipad){
+        height: auto;
+    }
     h2{
         text-align: center;
     }
@@ -102,18 +105,27 @@ form-twocolumn{
     grid-template-columns: repeat(2, minmax(325px,25%));
     gap: 50px;
     justify-content: center;
+    @include device(ipad){
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 form-threecolumn{
     display: grid;
     grid-template-columns: repeat(3, 25%);
     gap: 50px;
     justify-content: center;
+    @include device(ipad){
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 form-fourcolumn{
     display: grid;
     grid-template-columns: 15% repeat(3, calc((85% - 150px)/3));
     gap: 50px;
     justify-content: center;
+    @include device(ipad){
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 input-twocolumn{
     display: grid;
@@ -147,4 +159,7 @@ optionfour{
     gap: 80px;
     max-width: 1000px;
     margin: 0 auto 30px;
+    @include device(ipad){
+        gap: 20px;
+    }
 }
