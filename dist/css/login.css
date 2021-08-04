@@ -78,6 +78,11 @@ label {
   font-size: 13px;
   font-weight: 400;
 }
+@media only screen and (max-width: 991px) {
+  label {
+    font-size: 11px;
+  }
+}
 
 /*Radio and Checkbox*/
 radio {
@@ -87,6 +92,11 @@ radio {
 radio, checkbox {
   position: relative;
   margin-right: 25px;
+}
+@media only screen and (max-width: 991px) {
+  radio, checkbox {
+    margin-right: 0;
+  }
 }
 
 checkbox {

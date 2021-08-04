@@ -1,6 +1,13 @@
 /*QV-VC Footer*/
 article{
     @include quo-flex(flex, wrap, null, null, 40px);
+    @include device(ipad){
+        @include quo-flex(null, null, center);
+        gap: 20px;
+    }
+    @include device(sm-ipad){
+        gap: 10px;
+    }
 }
 /*QV-VC Save Button and Action icons*/
 qv-iconsvc{
@@ -10,6 +17,15 @@ qv-iconsvc{
     align-items: center;
     max-width: 1400px;
     margin: 50px auto 20px;
+    @include device(ipad){
+        grid-template-columns: 1fr;
+    }
+    saveform{
+        @include device(ipad){
+            order: -1;
+            text-align: right;
+        } 
+    }
     .fill-blue{
         min-width: 180px;
     }
@@ -24,6 +40,9 @@ figure {
     h4{
         text-transform: uppercase;
         font-weight: 400;
+        @include device(ipad){
+            font-size: 13px;
+        }
     }
     &:nth-child(1){
         stroke: $violet;
@@ -31,6 +50,10 @@ figure {
         margin-right: auto;
         display: flex;
         gap: 130px;
+        @include device(ipad){
+            gap: initial;
+            margin-right: 0;
+        }
         
         &::after{
             content: '';
@@ -38,6 +61,9 @@ figure {
             width: 2px;
             height: 80%;
             display: inline-block;
+            @include device(ipad){
+                content: none;
+            }
         }
     }
     &:nth-child(2){
@@ -78,10 +104,17 @@ qv-interviewvc{
 }
 footer{
     display: block;
+    li{
+        margin-bottom: 10px;
+    }
     p{
         margin-top: 16px;
         font-size: 13px;
         font-weight: 400;
+        @include device(ipad){
+            margin-top: 5px;
+            font-size: 11px;
+        }
     }
     nav ul{
         @include quo-flex(flex, wrap, space-between);

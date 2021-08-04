@@ -52,6 +52,11 @@ label {
   font-size: 13px;
   font-weight: 400;
 }
+@media only screen and (max-width: 991px) {
+  label {
+    font-size: 11px;
+  }
+}
 
 /*Radio and Checkbox*/
 radio {
@@ -61,6 +66,11 @@ radio {
 radio, checkbox {
   position: relative;
   margin-right: 25px;
+}
+@media only screen and (max-width: 991px) {
+  radio, checkbox {
+    margin-right: 0;
+  }
 }
 
 checkbox {
@@ -233,6 +243,12 @@ aside {
 aside h2 {
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  aside h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
 aside section {
   display: grid;
   grid-template-columns: 1fr 40px;
@@ -262,6 +278,11 @@ aside article {
   padding: 30px 20px;
   display: block;
 }
+@media only screen and (max-width: 1024px) {
+  aside article {
+    padding: 20px 10px;
+  }
+}
 aside article details {
   margin-bottom: 35px;
   display: block;
@@ -271,6 +292,11 @@ aside article details summary {
   text-transform: uppercase;
   font-size: 16px;
   list-style: none;
+}
+@media only screen and (max-width: 1024px) {
+  aside article details summary {
+    font-size: 14px;
+  }
 }
 aside article details p {
   font-size: 14px;
@@ -289,6 +315,17 @@ article {
   flex-wrap: wrap;
   gap: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  article {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  article {
+    gap: 10px;
+  }
+}
 
 /*QV-VC Save Button and Action icons*/
 qv-iconsvc {
@@ -298,6 +335,17 @@ qv-iconsvc {
   align-items: center;
   max-width: 1400px;
   margin: 50px auto 20px;
+}
+@media only screen and (max-width: 1024px) {
+  qv-iconsvc {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  qv-iconsvc saveform {
+    order: -1;
+    text-align: right;
+  }
 }
 qv-iconsvc .fill-blue {
   min-width: 180px;
@@ -319,6 +367,11 @@ figure h4 {
   text-transform: uppercase;
   font-weight: 400;
 }
+@media only screen and (max-width: 1024px) {
+  figure h4 {
+    font-size: 13px;
+  }
+}
 figure:nth-child(1) {
   stroke: #201786;
   fill: rgba(31, 14, 136, 0.5);
@@ -326,12 +379,23 @@ figure:nth-child(1) {
   display: flex;
   gap: 130px;
 }
+@media only screen and (max-width: 1024px) {
+  figure:nth-child(1) {
+    gap: initial;
+    margin-right: 0;
+  }
+}
 figure:nth-child(1)::after {
   content: "";
   background: #e1e1e1;
   width: 2px;
   height: 80%;
   display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  figure:nth-child(1)::after {
+    content: none;
+  }
 }
 figure:nth-child(2) {
   stroke: #229a99;
@@ -374,10 +438,19 @@ qv-interviewvc {
 footer {
   display: block;
 }
+footer li {
+  margin-bottom: 10px;
+}
 footer p {
   margin-top: 16px;
   font-size: 13px;
   font-weight: 400;
+}
+@media only screen and (max-width: 1024px) {
+  footer p {
+    margin-top: 5px;
+    font-size: 11px;
+  }
 }
 footer nav ul {
   display: flex;
@@ -432,6 +505,11 @@ qv-formsvc {
   max-width: 1300px;
   margin: auto;
   height: calc(100% - 351px);
+}
+@media only screen and (max-width: 1024px) {
+  qv-formsvc {
+    height: auto;
+  }
 }
 qv-formsvc h2 {
   text-align: center;
@@ -537,6 +615,11 @@ form-twocolumn {
   gap: 50px;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  form-twocolumn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 form-threecolumn {
   display: grid;
@@ -544,12 +627,22 @@ form-threecolumn {
   gap: 50px;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  form-threecolumn {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 form-fourcolumn {
   display: grid;
   grid-template-columns: 15% repeat(3, calc((85% - 150px)/3));
   gap: 50px;
   justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  form-fourcolumn {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 input-twocolumn {
@@ -588,12 +681,22 @@ optionfour {
   max-width: 1000px;
   margin: 0 auto 30px;
 }
+@media only screen and (max-width: 1024px) {
+  optionfour {
+    gap: 20px;
+  }
+}
 
 /*QV-VC Main*/
 body {
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: 77px 1fr;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    grid-template-columns: 170px 1fr;
+  }
 }
 
 qv-mainvc {

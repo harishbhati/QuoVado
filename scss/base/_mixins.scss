@@ -18,3 +18,19 @@
       flex-direction: $direction;
     }
 }
+
+$ipad-pro-width: 1024px;
+$ipad-width: 991px;
+
+@mixin device($media) {
+  @if $media == ipad {
+    @media only screen and (max-width: #{$ipad-pro-width}) {
+      @content;
+    }
+  }
+  @if $media == sm-ipad {
+    @media only screen and (max-width: #{$ipad-width}) {
+      @content;
+    }
+  }
+}

@@ -14,6 +14,9 @@ label{
     margin-bottom: 8px;
     font-size: 13px;
     font-weight: 400;
+    @include device(sm-ipad){
+        font-size: 11px;
+    }
 }
 /*Radio and Checkbox*/
 radio{
@@ -22,6 +25,9 @@ radio{
 radio,checkbox{
     position: relative;
     margin-right: 25px;
+    @include device(sm-ipad){
+        margin-right: 0;
+    }
 }
 checkbox{
     display: flex;
